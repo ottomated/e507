@@ -3,7 +3,7 @@
 ## Power
 - battery
 - battery connector
-- battery charger
+- battery charger (bq25185 or tp4056)
 - USB-C port (GT-USB-7010ASV) (C2988369)
 
 ## MCU
