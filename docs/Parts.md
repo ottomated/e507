@@ -11,7 +11,7 @@
 - USB-C port (GT-USB-7010ASV) (C2988369)
 
 ### How much power are we using?
-- esp32, 3.3v,
+- esp32, 3.3v
 - screen
 - dac 3.3v, might also need 1.8v
 - amp 2.3-5v (can use 3.3)
@@ -21,9 +21,20 @@
 - ESP32-S3-WROOM-1U-N16R8 (C3013946)
 	- Maybe ESP32-S3-MINI-1U? I don't think we need the extra flash and memory? plus smaller footprint
 	- Not STM32 because less examples
+	- Requirements: mp3, flac, wav + drive screen
 - Microsd reader
+	- Not accessible without disassembly
 - Boot / reset buttons (TS-1088-AR02016) (C720477)
+	- Not accessible from outside, used for programming
+
+## Interface
 - OLED screen
+- Power button
+- Volume up / down
+	- Note: buttons need to be perpendicular to the PCB on the edges
+- Spring-loaded rotary switch for navigating tracks (only goes a few degrees each way, spring returns to center)
+- Play button & back button
+	- Parallel to PCB like normal
 
 ## Audio
 
