@@ -3,4 +3,5 @@
 	(lib (name "Espressif") (type "KiCad") (uri "${KIPRJMOD}/symbols/Espressif.kicad_sym") (options "") (descr ""))
 	(lib (name "buttons") (type "KiCad") (uri "${KIPRJMOD}/symbols/buttons.kicad_sym") (options "") (descr ""))
 	(lib (name "12402012E212A") (type "KiCad") (uri "${KIPRJMOD}/symbols/12402012E212A.kicad_sym") (options "") (descr ""))
+	(lib (name "bq25185") (type "KiCad") (uri "${KIPRJMOD}/symbols/bq25185.kicad_sym") (options "") (descr ""))
 )

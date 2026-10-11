@@ -5,7 +5,9 @@
 - battery
 - battery connector
 - voltage regulator?
-- battery charger (bq25185 or tp4056)
+- battery charger
+	- TP4056, cheap, examples, simpler
+	- BQ25185, modern, configurable (C19725033)
 - USB-C port (GT-USB-7010ASV) (C2988369)
 
 ### How much power are we using?
@@ -34,10 +36,11 @@
 ## Case
 - 2 layer: cnc polycarbonate outside, metallic finish 3d print inside
 - pcbway does polycarb CNC, ~$60
+- maybe try to get bent sheet metal? cheap
 
 
 ## To Copy
 https://github.com/Seesternn/-ESP32-S3-MP3-Player - vibecoded, weird?
 https://redlib.catsarch.com/r/PrintedCircuitBoard/comments/1wu4k6i/review_request_esp32s3_based_mp3_player BQXXX
 https://redlib.catsarch.com/r/PrintedCircuitBoard/comments/1weyspl/schematic_only_review_request_mp3_player_using/ pretty similar
-https://www.amazon.com/dp/B0DNW32Y46 PCM5102A example
+https://www.amazon.com/dp/B0DNW32Y46 PCM5102A DAC example
