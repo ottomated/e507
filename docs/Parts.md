@@ -12,9 +12,14 @@
 - battery connector: XY-S2B-PH-SM4-TB (C54582899)
 	- 90 degree mount, see if works with case
 
-- LDO: ME6211C33M5G-N (C82942)
+- Buck-boost converter:
+	- Converts battery / usb voltage to 3.3V
+	- drives esp32, screen, microsd
+
+- LDO
+	- (can only step voltage down)
 	- Converts the 5V USB to 3.3V
-	- Not buck-boost converter because more expensive, more noise on audio rails, disadvantage is we lose the last bit of battery life
+	- Drives only DAC because low noise compared to buck-boost
 
 - battery charger: BQ25185 (C19725033)
 	- Integrated power path
@@ -24,7 +29,7 @@
 - Load switch for SD card & audio: AO3401A (C15127)
 
 ### How much power are we using?
-- esp32, 3.3v — 42–56mA @80MHz, 66–108mA @240MHz (dual core, no RF, modem-sleep); Wi-Fi TX peaks ~355mA
+- esp32, 3.3v — 42–56mA @80MHz, 66–108mA @240MHz (dual core, no RF, modem-sleep)
 - screen — OLED, est. 5–25mA (pick part first)
 - dac 3.3v — ~20–30mA playing, ~1mA idle
 - amp 2.3-5v (can use 3.3) — 2.1mA idle + music
@@ -43,6 +48,7 @@
 	- Not accessible without disassembly
 	- No card-detect pin
 	- Push-push for stability
+	- load switch to disable in sleep mode?
 - Boot / reset buttons: TS-1088-AR02016 (C720477)
 	- Not accessible from outside, used for programming
 
@@ -65,6 +71,7 @@
 	- This converts the binary stream of samples from the ESP32 into analog signals
 - AMP: TPA6132A2 (C69901)
 	- Can't drive the headphones directly off the DAC or something
+	- Amp gets power directly from battery (it can handle voltage range)
 - 3.5mm jack: PJ-342 (C668606)
 	- ESD protection
 
