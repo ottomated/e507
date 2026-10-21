@@ -9,14 +9,15 @@
 - battery - 1000+mAh LiPo, with JST PH connector
 	- buy separately
 
-- battery connector: XY-S2B-PH-SM4-TB (C54582899)
+- battery connector: S2B-PH-SM4-TB (C295747)
 	- 90 degree mount, see if works with case
+	- cheaper clone: XY-S2B-PH-SM4-TB (C54582899)
 
-- Buck-boost converter:
+- Buck-boost converter: TPS631000DRLR
 	- Converts battery / usb voltage to 3.3V
 	- drives esp32, screen, microsd
 
-- LDO
+- LDO: TPS73633DBVT? (C28038)
 	- (can only step voltage down)
 	- Converts the 5V USB to 3.3V
 	- Drives only DAC because low noise compared to buck-boost
@@ -44,10 +45,10 @@
 	- No wifi or bluetooth needed at all
 	- Needs to get battery charge level
 		- ADC voltage divider from BAT+ (e.g. 2×100k) into GPIO
-- Microsd reader: (C393941)
+- Microsd reader: DM3CS-SF (C393941)
 	- Not accessible without disassembly
 	- No card-detect pin
-	- Push-push for stability
+	- hinged for stability
 	- load switch to disable in sleep mode?
 - Boot / reset buttons: TS-1088-AR02016 (C720477)
 	- Not accessible from outside, used for programming
@@ -72,8 +73,9 @@
 - AMP: TPA6132A2 (C69901)
 	- Can't drive the headphones directly off the DAC or something
 	- Amp gets power directly from battery (it can handle voltage range)
-- 3.5mm jack: PJ-342 (C668606)
-	- ESD protection
+- 3.5mm jack: SJ-3523-SMT-TR (C4991872)
+	- TODO - find a better one maybe?
+	- ESD protection?
 
 ## Case
 - 2 layer: cnc polycarbonate outside, metallic finish 3d print inside

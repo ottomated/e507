@@ -1,5 +1,5 @@
 
-(footprint AMPHENOL_12402012E212A (layer F.Cu) (tedit 6ABDDD95)
+(footprint AMPHENOL_12402012E212A (layer F.Cu) (tedit 6AD809C4)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -1.62 -8.405 0) (layer F.SilkS)
