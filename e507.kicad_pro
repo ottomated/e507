@@ -697,13 +697,17 @@
         "uuid": "acf7fdfc-08c7-4b01-88b5-5cee2f49d989"
       }
     ],
-    "used_designators": "S1,SW1-2,R1-4,C1-4,D1,#PWR1-11,J1,U1-2",
+    "used_designators": "P1,S1,SW1-2,R1-7,C1-4,D1,#PWR1-14,J1,U1-2",
     "variants": []
   },
   "sheets": [
     [
       "acf7fdfc-08c7-4b01-88b5-5cee2f49d989",
       "Root"
+    ],
+    [
+      "b552a16b-32bd-43bc-b107-a95a5d6d725a",
+      "Power"
     ]
   ],
   "text_variables": {},

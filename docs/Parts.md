@@ -29,6 +29,12 @@
 
 - Load switch for SD card & audio: AO3401A (C15127)
 
+USB-C -> TVS diode -> BQ25185 -> VSYS
+
+VSYS -> buck-boost -> ESP32, OLED
+VSYS -> LDO -> DAC, SD (because SD has high standby usage, LDO can be toggled)
+VSYS -> AMP
+
 ### How much power are we using?
 - esp32, 3.3v — 42–56mA @80MHz, 66–108mA @240MHz (dual core, no RF, modem-sleep)
 - screen — OLED, est. 5–25mA (pick part first)
