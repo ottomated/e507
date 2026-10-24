@@ -59,12 +59,20 @@ VSYS -> AMP
 - Boot / reset buttons: TS-1088-AR02016 (C720477)
 	- Not accessible from outside, used for programming
 
+## ESP32 Pins
+- EN = reset button (reboots the esp32)
+- IO0 = boot button (hold to flash rom)
+- IO1-2 = screen I2C
+- IO3 = X strapping
+- IO4-9 = sd card
+- IO46 = pull-down to ensure boot button works
+
 ## Interface
 - OLED screen
 	- Monochrome, ~ 1x0.3in, 128x32px
 	- I2C communication
-- Power button: TL3340AF160QG (C2886925)
-	- right-angle
+	- either ribbon cable connector and solder on the plug? or does JLCPCB attach the whole thing?
+	- might need dip switches because apparently oled boards are unreliable
 - Volume up / down: TL3340AF160QG (C2886925)
 	- right-angle
 - Play button & back button: TS-1088-AR02016 (C720477)

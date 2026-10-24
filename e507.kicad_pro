@@ -698,7 +698,7 @@
         "uuid": "acf7fdfc-08c7-4b01-88b5-5cee2f49d989"
       }
     ],
-    "used_designators": "#PWR1-27,C1-8,D1,J1,L1,P1,R1-10,S1,SW1-2,U1-3",
+    "used_designators": "#PWR1-57,C1-21,D1,J1-3,L1,P1,R1-17,S1-4,SW1-2,U1-7",
     "variants": []
   },
   "sheets": [
@@ -709,6 +709,14 @@
     [
       "b552a16b-32bd-43bc-b107-a95a5d6d725a",
       "Power"
+    ],
+    [
+      "65979738-6033-4507-82e6-5a4d4cf2002c",
+      "MCU"
+    ],
+    [
+      "f3ecc11f-918d-4403-b589-59b01044df1d",
+      "Audio"
     ]
   ],
   "text_variables": {},
