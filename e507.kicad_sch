@@ -20,23 +20,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 100.33 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2735a2e7-8859-44d2-8073-e6bafb6eb3a5")
-	)
-	(wire
-		(pts
 			(xy 82.55 93.98) (xy 100.33 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4851dbf3-9fcd-41db-95fc-af915f7eceb1")
+		(uuid "5f091b6c-0c59-4858-9cd7-b8c3f9ebd301")
 	)
 	(wire
 		(pts
@@ -47,6 +37,16 @@
 			(type default)
 		)
 		(uuid "6f803a0a-fa3a-4692-948f-64d170d80b39")
+	)
+	(wire
+		(pts
+			(xy 82.55 96.52) (xy 100.33 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "772f97f6-474b-4336-958b-065ff9dbd3a2")
 	)
 	(wire
 		(pts
@@ -233,7 +233,7 @@
 			)
 		)
 		(pin "IO_CHG_STAT1" input
-			(at 82.55 96.52 0)
+			(at 82.55 93.98 0)
 			(uuid "7d7067a4-96e3-4170-9871-4fc9771de795")
 			(effects
 				(font
@@ -243,7 +243,7 @@
 			)
 		)
 		(pin "IO_CHG_STAT2" input
-			(at 82.55 93.98 0)
+			(at 82.55 96.52 0)
 			(uuid "93a062a1-919d-488e-90e7-f56a5b440471")
 			(effects
 				(font

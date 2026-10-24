@@ -13,4 +13,5 @@
 	(lib (name "DM3CS-SF") (type "KiCad") (uri "${KIPRJMOD}/parts/microsd/DM3CS-SF.kicad_sym") (options "") (descr ""))
 	(lib (name "SJ-3523-SMT-TR") (type "KiCad") (uri "${KIPRJMOD}/parts/audio-jack/SJ-3523-SMT-TR.kicad_sym") (options "") (descr ""))
 	(lib (name "TPS631000DRLR") (type "KiCad") (uri "${KIPRJMOD}/parts/buck-boost/TPS631000DRLR.kicad_sym") (options "") (descr ""))
+	(lib (name "USBLC6-2SC6") (type "KiCad") (uri "${KIPRJMOD}/parts/usb-data-esd/USBLC6-2SC6.kicad_sym") (options "") (descr ""))
 )

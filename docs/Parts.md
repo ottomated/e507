@@ -4,7 +4,9 @@
 - USB-C port: GT-USB-7010ASV (C2988369)
 	- 5.1k resistors on CC1/CC2 to GND
 
-- ESD protection: TVS diode: SMAJ5.0A (C83329)
+- ESD protection: 
+	- usb power = TVS diode: SMAJ5.0A (C83329)
+	- usb data = USBLC6-2SC6 (C7519)
 
 - battery - 1000+mAh LiPo, with JST PH connector
 	- buy separately

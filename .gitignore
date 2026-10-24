@@ -1,2 +1,4 @@
 ~*.lck
 docs/.cache
+.DS_Store
+*.bak
