@@ -5737,7 +5737,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS73633DBVT:SOT95P280X145-5N"
+		(property "Footprint" "ldo:SOT95P280X145-5N"
 			(at 62.23 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7906,7 +7906,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "S2B-PH-SM4-TB:JST_S2B-PH-SM4-TB"
+		(property "Footprint" "battery-connector:JST_S2B-PH-SM4-TB"
 			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8326,7 +8326,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS631000DRLR:SOT50P160X60-8N"
+		(property "Footprint" "buck-boost:SOT50P160X60-8N"
 			(at 209.55 125.73 0)
 			(hide yes)
 			(show_name no)

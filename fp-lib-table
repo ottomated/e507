@@ -13,4 +13,5 @@
 	(lib (name "charger") (type "KiCad") (uri "${KIPRJMOD}/parts/charger") (options "") (descr ""))
 	(lib (name "battery-connector") (type "KiCad") (uri "${KIPRJMOD}/parts/battery-connector") (options "") (descr ""))
 	(lib (name "usb-port") (type "KiCad") (uri "${KIPRJMOD}/parts/usb-port") (options "") (descr ""))
+	(lib (name "usb-data-esd") (type "KiCad") (uri "${KIPRJMOD}/parts/usb-data-esd") (options "") (descr ""))
 )

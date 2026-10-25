@@ -68,13 +68,14 @@ VSYS -> AMP
 - IO3 = X strapping
 - IO4-9 = sd card
 - IO46 = pull-down to ensure boot button works
+- todo: move buttons to RTC pins so they can wake the device
 
 ## Interface
-- OLED screen
+- OLED screen: HS91L02W2C01 (C5248081)
 	- Monochrome, ~ 1x0.3in, 128x32px
 	- I2C communication
-	- either ribbon cable connector and solder on the plug? or does JLCPCB attach the whole thing?
-	- might need dip switches because apparently oled boards are unreliable
+	- separate breakout board that needs to be soldered on
+	- might need dip switches because apparently oled boards are unreliable?
 - Volume up / down: TL3340AF160QG (C2886925)
 	- right-angle
 - Play button & back button: TS-1088-AR02016 (C720477)

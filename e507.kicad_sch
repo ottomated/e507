@@ -20,6 +20,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 90.17) (xy 153.67 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d4f6704-ccc4-41ac-920b-59d32ef4f2eb")
+	)
+	(wire
+		(pts
 			(xy 82.55 93.98) (xy 100.33 93.98)
 		)
 		(stroke
@@ -27,6 +37,16 @@
 			(type default)
 		)
 		(uuid "5f091b6c-0c59-4858-9cd7-b8c3f9ebd301")
+	)
+	(wire
+		(pts
+			(xy 135.89 95.25) (xy 153.67 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6349ca89-3321-479e-8cb3-f185a68d35de")
 	)
 	(wire
 		(pts
@@ -47,6 +67,16 @@
 			(type default)
 		)
 		(uuid "772f97f6-474b-4336-958b-065ff9dbd3a2")
+	)
+	(wire
+		(pts
+			(xy 135.89 92.71) (xy 153.67 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b50a1790-a7bb-4a02-9f17-69c3fffed1ca")
 	)
 	(wire
 		(pts
@@ -164,6 +194,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "IO_DAC_BCK" input
+			(at 135.89 92.71 0)
+			(uuid "3eb73c99-8a73-4f2c-8fc9-d73f244b2b2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO_DAC_DIN" input
+			(at 135.89 90.17 0)
+			(uuid "0a6c6de4-0d29-4a6f-b60f-94c14e552848")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO_DAC_LRCK" input
+			(at 135.89 95.25 0)
+			(uuid "b31848cd-e385-42bb-b124-553c4397f7f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -316,6 +376,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "IO_DAC_BCK" input
+			(at 153.67 92.71 180)
+			(uuid "c373362d-09e2-4a29-be4b-78a6ca6c4fb5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO_DAC_DIN" input
+			(at 153.67 90.17 180)
+			(uuid "856dd11e-cdcd-40f6-b8a4-b5c3839f0cef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO_DAC_LRCK" input
+			(at 153.67 95.25 180)
+			(uuid "66ff28b5-7f21-492d-8ecf-fa3af9caedeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

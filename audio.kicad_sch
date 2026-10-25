@@ -2580,17 +2580,6 @@
 		)
 		(uuid "3f4f4afd-261e-4a13-884a-47a1ad97aabe")
 	)
-	(hierarchical_label "IO_DAC_SCK"
-		(shape input)
-		(at 69.85 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7e97a7f5-915b-4dfb-ab15-8bcfe35e079a")
-	)
 	(hierarchical_label "IO_DAC_DIN"
 		(shape input)
 		(at 69.85 59.69 180)
@@ -2679,6 +2668,85 @@
 			(project "e507"
 				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "068dc812-d889-4b02-b3eb-2b1f5d434f2f")
+		(property "Reference" "#PWR063"
+			(at 63.5 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "63714824-f030-4b87-9753-248258693515")
+		)
+		(instances
+			(project "e507"
+				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -2876,7 +2944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPA6132A2RTER:QFN50P300X300X80-16N"
+		(property "Footprint" "amp:QFN50P300X300X80-16N"
 			(at 87.63 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3147,7 +3215,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM5102APWR:SOP65P640X120-20N"
+		(property "Footprint" "dac:SOP65P640X120-20N"
 			(at 87.63 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4536,7 +4604,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SJ-3523-SMT-TR:CUI_SJ-3523-SMT-TR"
+		(property "Footprint" "audio-jack:CUI_SJ-3523-SMT-TR"
 			(at 262.89 62.23 0)
 			(hide yes)
 			(show_name no)
