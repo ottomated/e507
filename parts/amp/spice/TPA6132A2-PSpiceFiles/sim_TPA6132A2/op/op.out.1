@@ -1,0 +1,1121 @@
+
+**** 07/22/10 10:56:39 ******* PSpice 16.2.0 (Oct 2008) ******* ID# 0 ********
+
+ ** Profile: "sim_TPA6132A2_HT1-op"  [ C:\Userdata\Cadence\tpa6132a2_ht1-pspicefiles\sim_tpa6132a2_ht1\op.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "op.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Userdata/tpa6132a2/tpa6132a2.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.2\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\sim_TPA6132A2_HT1.net" 
+
+
+
+**** INCLUDING sim_TPA6132A2_HT1.net ****
+* source TPA6132A2_HT1
+R_R1         OUTL 0  16 TC=0,0 
+V_V9         0 N87653  
++SIN 0 50m 1k 0 0 0
+V_V13         N91308 0 0
+X_U1         N87891 N88973 EN N91437 N91308 N88862 N90679 N87361 N87367 N87389
++  N87427 OUTL OUTR 0 0 N89710 TPA6132A2 
+C_C10         N88973 N87891  1u  TC=0,0 
+V_V12         N89710 0 5.5
+R_R2         OUTR 0  16 TC=0,0 
+V_V15         EN 0  
++PULSE 1.3 1.3 1m 1p 1p 10m 20m
+V_V11         N87629 0  
++SIN 0 50m 1k 0 0 0
+C_C12         0 N90679  2.2u  TC=0,0 
+C_C6         N87361 N87617  1u  TC=0,0 
+V_V14         N91437 0 1.3
+C_C7         N87367 N87653  1u  TC=0,0 
+C_C8         N87389 N87623  1u  TC=0,0 
+C_C9         N87427 N87629  1u  TC=0,0 
+V_V10         0 N87623  
++SIN 0 50m 1k 0 0 0
+C_C11         0 N88862  2.2u  TC=0,0 
+V_V8         N87617 0  
++SIN 0 50m 1k 0 0 0
+
+**** RESUMING op.cir ****
+.END
+
+**** 07/22/10 10:56:39 ******* PSpice 16.2.0 (Oct 2008) ******* ID# 0 ********
+
+ ** Profile: "sim_TPA6132A2_HT1-op"  [ C:\Userdata\Cadence\tpa6132a2_ht1-pspicefiles\sim_tpa6132a2_ht1\op.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DDEFAULT        DCURLIM         DBLOCK          
+          IS  800.000000E-18    1.478000E-24  800.000000E-18 
+          BV                                   25            
+
+
+**** 07/22/10 10:56:39 ******* PSpice 16.2.0 (Oct 2008) ******* ID# 0 ********
+
+ ** Profile: "sim_TPA6132A2_HT1-op"  [ C:\Userdata\Cadence\tpa6132a2_ht1-pspicefiles\sim_tpa6132a2_ht1\op.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               NMOS_DELAY      PMOS_DELAY      NMOS1           
+               NMOS            PMOS            NMOS            
+       LEVEL    1               1               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    0               0               0            
+          KP   72.000000E-09   87.500000E-06     .018706     
+       GAMMA    0               0               0            
+         PHI     .6              .6              .6          
+      LAMBDA    0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0            
+          PB     .8              .8              .8          
+        PBSW     .8              .8              .8          
+          CJ    0               0               0            
+        CJSW    0               0               0            
+        CGSO    0               0               0            
+        CGDO    0               0               0            
+        CGBO    0               0               0            
+         TOX    0               0               0            
+          XJ    0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1               1            
+         VFB    0               0               0            
+        LETA    0               0               0            
+        WETA    0               0               0            
+          U0    0               0               0            
+        TEMP    0               0               0            
+         VDD    5               5               5            
+       XPART    0               0               0            
+
+
+**** 07/22/10 10:56:39 ******* PSpice 16.2.0 (Oct 2008) ******* ID# 0 ********
+
+ ** Profile: "sim_TPA6132A2_HT1-op"  [ C:\Userdata\Cadence\tpa6132a2_ht1-pspicefiles\sim_tpa6132a2_ht1\op.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               VSWITCH1        
+         RON     .01         
+        ROFF    1.000000E+12 
+         VON    1.1          
+        VOFF    0            
+
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   EN)     .6500  ( OUTL)-337.6E-12  ( OUTR)-337.6E-12  (N87361)    9.4566     
+
+(N87367)   41.2520 (N87389)    9.4566 (N87427)   41.2520 (N87617)    0.0000     
+
+(N87623)    0.0000 (N87629)    0.0000 (N87653)    0.0000 (N87891)    0.0000     
+
+(N88862)   27.2100 (N88973)    0.0000 (N89710)    2.7500 (N90679)  -27.2050     
+
+(N91308)    0.0000 (N91437)     .6500 (X_U1.XI0.NET13)     .9500                
+
+(X_U1.XI0.NET19)     .9500            (X_U1.XI0.NET25)     .9500                
+
+(X_U1.XI0.EN_INT)    0.0000           (X_U1.XI0.G0_INT)    1.3750               
+
+(X_U1.XI0.G1_INT)    0.0000           (X_U1.XI0.NET041)     .9000               
+
+(X_U1.XI0.NET045)    -.4500           (X_U1.XI0.NET058)-10.50E-06               
+
+(X_U1.XI0.NET066) 10.50E-06           (X_U1.XI0.NET0107)    1.3750              
+
+(X_U1.XI0.EN_INTINV)    1.3750        (X_U1.XI0.XAHDLI5.3)    1.3750            
+
+(X_U1.XI0.XI13.NET5)   41.2520        (X_U1.XI0.XI13.NET9)-337.5E-12            
+
+(X_U1.XI0.XI14.NET5)   41.2520        (X_U1.XI0.XI14.NET9)-337.5E-12            
+
+(X_U1.XI0.XAHDLI12.3)    1.3750       (X_U1.XI0.XAHDLI16.3)    0.0000           
+
+(X_U1.XI0.XAHDLI18.3)    1.3750       (X_U1.XI0.XI13.ENINV)    1.3750           
+
+(X_U1.XI0.XI13.NET11) 4.125E+09       (X_U1.XI0.XI13.NET19)    9.4565           
+
+(X_U1.XI0.XI13.NET23) 945.7E+06       (X_U1.XI0.XI13.NET45)  -27.8520           
+
+(X_U1.XI0.XI13.NET50)   28.0740       (X_U1.XI0.XI14.ENINV)    1.3750           
+
+(X_U1.XI0.XI14.NET11) 4.125E+09       (X_U1.XI0.XI14.NET19)    9.4565           
+
+(X_U1.XI0.XI14.NET23) 945.7E+06       (X_U1.XI0.XI14.NET45)  -27.8520           
+
+(X_U1.XI0.XI14.NET50)   28.0740       (X_U1.XI0.XI23.NET17)    0.0000           
+
+(X_U1.XI0.XI23.NET25)    0.0000       (X_U1.XI0.XI23.NET26)    0.0000           
+
+(X_U1.XI0.XI23.NET33)    0.0000       (X_U1.XI0.XI23.NET34)    0.0000           
+
+(X_U1.XI0.XI23.NET41)    0.0000       (X_U1.XI0.XI23.NET42)    0.0000           
+
+(X_U1.XI0.XI23.NET50)    0.0000       (X_U1.XI0.XI23.NET54)    0.0000           
+
+(X_U1.XI0.XI13.NET044)   28.0390      (X_U1.XI0.XI13.XI0.B0)    0.0000          
+
+(X_U1.XI0.XI13.XI0.B1)    1.3750      (X_U1.XI0.XI13.XI0.B2)    0.0000          
+
+(X_U1.XI0.XI13.XI0.B3)    0.0000      (X_U1.XI0.XI13.XI2.B0)    0.0000          
+
+(X_U1.XI0.XI13.XI2.B1)    1.3750      (X_U1.XI0.XI13.XI2.B2)    0.0000          
+
+(X_U1.XI0.XI13.XI2.B3)    0.0000      (X_U1.XI0.XI14.NET044)   28.0390          
+
+(X_U1.XI0.XI14.XI0.B0)    0.0000      (X_U1.XI0.XI14.XI0.B1)    1.3750          
+
+(X_U1.XI0.XI14.XI0.B2)    0.0000      (X_U1.XI0.XI14.XI0.B3)    0.0000          
+
+(X_U1.XI0.XI14.XI2.B0)    0.0000      (X_U1.XI0.XI14.XI2.B1)    1.3750          
+
+(X_U1.XI0.XI14.XI2.B2)    0.0000      (X_U1.XI0.XI14.XI2.B3)    0.0000          
+
+(X_U1.XI0.XI13.XI13.VB)    -.0037     (X_U1.XI0.XI13.XI13.VC)  123.4000         
+
+(X_U1.XI0.XI13.XI13.VE)   27.1110     (X_U1.XI0.XI14.XI13.VB)    -.0037         
+
+(X_U1.XI0.XI14.XI13.VC)  123.4000     (X_U1.XI0.XI14.XI13.VE)   27.1110         
+
+(X_U1.XI0.XI13.XI13.VA1)   27.1520    (X_U1.XI0.XI13.XI13.VA2)   27.1520        
+
+(X_U1.XI0.XI14.XI13.VA1)   27.1520    (X_U1.XI0.XI14.XI13.VA2)   27.1520        
+
+(X_U1.XI0.XI13.XI0.B0INV)    1.3750   (X_U1.XI0.XI13.XI0.B1INV)    0.0000       
+
+(X_U1.XI0.XI13.XI0.B2INV)    1.3750   (X_U1.XI0.XI13.XI0.B3INV)    1.3750       
+
+(X_U1.XI0.XI13.XI0.G0INV)    0.0000   (X_U1.XI0.XI13.XI0.G1INV)    1.3750       
+
+(X_U1.XI0.XI13.XI0.NET80)-10.00E+09   (X_U1.XI0.XI13.XI0.NET84) 945.7E+06       
+
+(X_U1.XI0.XI13.XI0.NET88) 315.2E+06   (X_U1.XI0.XI13.XI0.NET92) 315.2E+06       
+
+(X_U1.XI0.XI13.XI2.B0INV)    1.3750   (X_U1.XI0.XI13.XI2.B1INV)    0.0000       
+
+(X_U1.XI0.XI13.XI2.B2INV)    1.3750   (X_U1.XI0.XI13.XI2.B3INV)    1.3750       
+
+(X_U1.XI0.XI13.XI2.G0INV)    0.0000   (X_U1.XI0.XI13.XI2.G1INV)    1.3750       
+
+(X_U1.XI0.XI13.XI2.NET80)-10.00E+09   (X_U1.XI0.XI13.XI2.NET84) 4.125E+09       
+
+(X_U1.XI0.XI13.XI2.NET88) 1.375E+09   (X_U1.XI0.XI13.XI2.NET92) 1.375E+09       
+
+(X_U1.XI0.XI14.XI0.B0INV)    1.3750   (X_U1.XI0.XI14.XI0.B1INV)    0.0000       
+
+(X_U1.XI0.XI14.XI0.B2INV)    1.3750   (X_U1.XI0.XI14.XI0.B3INV)    1.3750       
+
+(X_U1.XI0.XI14.XI0.G0INV)    0.0000   (X_U1.XI0.XI14.XI0.G1INV)    1.3750       
+
+(X_U1.XI0.XI14.XI0.NET80)-10.00E+09   (X_U1.XI0.XI14.XI0.NET84) 945.7E+06       
+
+(X_U1.XI0.XI14.XI0.NET88) 315.2E+06   (X_U1.XI0.XI14.XI0.NET92) 315.2E+06       
+
+(X_U1.XI0.XI14.XI2.B0INV)    1.3750   (X_U1.XI0.XI14.XI2.B1INV)    0.0000       
+
+(X_U1.XI0.XI14.XI2.B2INV)    1.3750   (X_U1.XI0.XI14.XI2.B3INV)    1.3750       
+
+(X_U1.XI0.XI14.XI2.G0INV)    0.0000   (X_U1.XI0.XI14.XI2.G1INV)    1.3750       
+
+(X_U1.XI0.XI14.XI2.NET80)-10.00E+09   (X_U1.XI0.XI14.XI2.NET84) 4.125E+09       
+
+(X_U1.XI0.XI14.XI2.NET88) 1.375E+09   (X_U1.XI0.XI14.XI2.NET92) 1.375E+09       
+
+(X_U1.XI0.XI13.XAHDLI16.3)    1.3750  (X_U1.XI0.XI13.XI0.NET112) 315.2E+06      
+
+(X_U1.XI0.XI13.XI0.NET114) 315.2E+06  (X_U1.XI0.XI13.XI0.NET116) 315.2E+06      
+
+(X_U1.XI0.XI13.XI0.NET118) 315.2E+06  (X_U1.XI0.XI13.XI0.NET120)-10.00E+09      
+
+(X_U1.XI0.XI13.XI0.NET122)-10.00E+09  (X_U1.XI0.XI13.XI0.NET124)  -27.8510      
+
+(X_U1.XI0.XI13.XI0.NET126)  505.6800  (X_U1.XI0.XI13.XI13.NET63)  -27.8520      
+
+(X_U1.XI0.XI13.XI13.NET67)  -26.5950  (X_U1.XI0.XI13.XI2.NET112) 1.375E+09      
+
+(X_U1.XI0.XI13.XI2.NET114) 1.375E+09  (X_U1.XI0.XI13.XI2.NET116) 1.375E+09      
+
+(X_U1.XI0.XI13.XI2.NET118) 1.375E+09  (X_U1.XI0.XI13.XI2.NET120)-10.00E+09      
+
+(X_U1.XI0.XI13.XI2.NET122)-9.042E+09  (X_U1.XI0.XI13.XI2.NET124)     .0011      
+
+(X_U1.XI0.XI13.XI2.NET126) 2111.5000  (X_U1.XI0.XI14.XAHDLI16.3)    1.3750      
+
+(X_U1.XI0.XI14.XI0.NET112) 315.2E+06  (X_U1.XI0.XI14.XI0.NET114) 315.2E+06      
+
+(X_U1.XI0.XI14.XI0.NET116) 315.2E+06  (X_U1.XI0.XI14.XI0.NET118) 315.2E+06      
+
+(X_U1.XI0.XI14.XI0.NET120)-10.00E+09  (X_U1.XI0.XI14.XI0.NET122)-10.00E+09      
+
+(X_U1.XI0.XI14.XI0.NET124)  -27.8510  (X_U1.XI0.XI14.XI0.NET126)  505.6800      
+
+(X_U1.XI0.XI14.XI13.NET63)  -27.8520  (X_U1.XI0.XI14.XI13.NET67)  -26.5950      
+
+(X_U1.XI0.XI14.XI2.NET112) 1.375E+09  (X_U1.XI0.XI14.XI2.NET114) 1.375E+09      
+
+(X_U1.XI0.XI14.XI2.NET116) 1.375E+09  (X_U1.XI0.XI14.XI2.NET118) 1.375E+09      
+
+(X_U1.XI0.XI14.XI2.NET120)-10.00E+09  (X_U1.XI0.XI14.XI2.NET122)-9.042E+09      
+
+(X_U1.XI0.XI14.XI2.NET124)     .0011  (X_U1.XI0.XI14.XI2.NET126) 2111.5000      
+
+(X_U1.XI0.XI13.XI13.NET050)-43.96E-18 (X_U1.XI0.XI13.XI13.NET053)   28.0390     
+
+(X_U1.XI0.XI13.XI13.NET058) 55.51E-18 (X_U1.XI0.XI13.XI13.NET062)  -26.8130     
+
+(X_U1.XI0.XI13.XI13.NET063)   26.8180 (X_U1.XI0.XI13.XI13.NET068)   27.1520     
+
+(X_U1.XI0.XI13.XI13.NET094)   27.1520 (X_U1.XI0.XI13.XI13.NET106)  -13.9260     
+
+(X_U1.XI0.XI13.XI13.NET110)   26.6000 (X_U1.XI0.XI13.XI13.NET126)   25.9510     
+
+(X_U1.XI0.XI13.XI13.NET128)  -25.9510 (X_U1.XI0.XI14.XI13.NET050)    0.0000     
+
+(X_U1.XI0.XI14.XI13.NET053)   28.0390 (X_U1.XI0.XI14.XI13.NET058)    0.0000     
+
+(X_U1.XI0.XI14.XI13.NET062)  -26.8130 (X_U1.XI0.XI14.XI13.NET063)   26.8180     
+
+(X_U1.XI0.XI14.XI13.NET068)   27.1520 (X_U1.XI0.XI14.XI13.NET094)   27.1520     
+
+(X_U1.XI0.XI14.XI13.NET106)  -13.9260 (X_U1.XI0.XI14.XI13.NET110)   26.6000     
+
+(X_U1.XI0.XI14.XI13.NET126)   25.9510 (X_U1.XI0.XI14.XI13.NET128)  -25.9510     
+
+(X_U1.XI0.XI23.XI45.NET017)    2.7500 (X_U1.XI0.XI23.XI45.NET019)    0.0000     
+
+(X_U1.XI0.XI23.XI45.NET021)    2.7500 (X_U1.XI0.XI23.XI45.NET025)    2.7500     
+
+(X_U1.XI0.XI23.XI45.NET029)    2.7500 (X_U1.XI0.XI23.XI45.NET033)    2.7500     
+
+(X_U1.XI0.XI23.XI45.NET037)    2.7500 (X_U1.XI0.XI23.XI45.NET041)    2.7500     
+
+(X_U1.XI0.XI23.XI45.NET045)    2.7500 (X_U1.XI0.XI23.XI45.NET049)    2.7500     
+
+(X_U1.XI0.XI23.XI45.NET050)    2.7494 (X_U1.XI0.XI23.XI46.NET017)    2.7500     
+
+(X_U1.XI0.XI23.XI46.NET019)    0.0000 (X_U1.XI0.XI23.XI46.NET021)    2.7500     
+
+(X_U1.XI0.XI23.XI46.NET025)    2.7500 (X_U1.XI0.XI23.XI46.NET029)    2.7500     
+
+(X_U1.XI0.XI23.XI46.NET033)    2.7500 (X_U1.XI0.XI23.XI46.NET037)    2.7500     
+
+(X_U1.XI0.XI23.XI46.NET041)    2.7500 (X_U1.XI0.XI23.XI46.NET045)    2.7500     
+
+(X_U1.XI0.XI23.XI46.NET049)    2.7500 (X_U1.XI0.XI23.XI46.NET050)    2.7500     
+
+(X_U1.XI0.XI23.XI47.NET017)    2.7500 (X_U1.XI0.XI23.XI47.NET019)    0.0000     
+
+(X_U1.XI0.XI23.XI47.NET021)    2.7500 (X_U1.XI0.XI23.XI47.NET025)    2.7500     
+
+(X_U1.XI0.XI23.XI47.NET029)    2.7500 (X_U1.XI0.XI23.XI47.NET033)    2.7500     
+
+(X_U1.XI0.XI23.XI47.NET037)    2.7500 (X_U1.XI0.XI23.XI47.NET041)    2.7500     
+
+(X_U1.XI0.XI23.XI47.NET045)    2.7500 (X_U1.XI0.XI23.XI47.NET049)    2.7500     
+
+(X_U1.XI0.XI23.XI47.NET050)    2.7500 (X_U1.XI0.XI23.XI48.NET017)    2.7500     
+
+(X_U1.XI0.XI23.XI48.NET019)    0.0000 (X_U1.XI0.XI23.XI48.NET021)    2.7500     
+
+(X_U1.XI0.XI23.XI48.NET025)    2.7500 (X_U1.XI0.XI23.XI48.NET029)    2.7500     
+
+(X_U1.XI0.XI23.XI48.NET033)    2.7500 (X_U1.XI0.XI23.XI48.NET037)    2.7500     
+
+(X_U1.XI0.XI23.XI48.NET041)    2.7500 (X_U1.XI0.XI23.XI48.NET045)    2.7500     
+
+(X_U1.XI0.XI23.XI48.NET049)    2.7500 (X_U1.XI0.XI23.XI48.NET050)    2.7500     
+
+(X_U1.XI0.XI23.XI49.NET017)    2.7500 (X_U1.XI0.XI23.XI49.NET019)    0.0000     
+
+(X_U1.XI0.XI23.XI49.NET021)    2.7500 (X_U1.XI0.XI23.XI49.NET025)    2.7500     
+
+(X_U1.XI0.XI23.XI49.NET029)    2.7500 (X_U1.XI0.XI23.XI49.NET033)    2.7500     
+
+(X_U1.XI0.XI23.XI49.NET037)    2.7500 (X_U1.XI0.XI23.XI49.NET041)    2.7500     
+
+(X_U1.XI0.XI23.XI49.NET045)    2.7500 (X_U1.XI0.XI23.XI49.NET049)    2.7500     
+
+(X_U1.XI0.XI23.XI49.NET050)    2.7500 (X_U1.XI0.XI23.XI50.NET017)    2.7500     
+
+(X_U1.XI0.XI23.XI50.NET019)    0.0000 (X_U1.XI0.XI23.XI50.NET021)    2.7500     
+
+(X_U1.XI0.XI23.XI50.NET025)    2.7500 (X_U1.XI0.XI23.XI50.NET029)    2.7500     
+
+(X_U1.XI0.XI23.XI50.NET033)    2.7500 (X_U1.XI0.XI23.XI50.NET037)    2.7500     
+
+(X_U1.XI0.XI23.XI50.NET041)    2.7500 (X_U1.XI0.XI23.XI50.NET045)    2.7500     
+
+(X_U1.XI0.XI23.XI50.NET049)    2.7500 (X_U1.XI0.XI23.XI50.NET050)    2.7500     
+
+(X_U1.XI0.XI23.XI51.NET017)    2.7500 (X_U1.XI0.XI23.XI51.NET019)    0.0000     
+
+(X_U1.XI0.XI23.XI51.NET021)    2.7500 (X_U1.XI0.XI23.XI51.NET025)    2.7500     
+
+(X_U1.XI0.XI23.XI51.NET029)    2.7500 (X_U1.XI0.XI23.XI51.NET033)    2.7500     
+
+(X_U1.XI0.XI23.XI51.NET037)    2.7500 (X_U1.XI0.XI23.XI51.NET041)    2.7500     
+
+(X_U1.XI0.XI23.XI51.NET045)    2.7500 (X_U1.XI0.XI23.XI51.NET049)    2.7500     
+
+(X_U1.XI0.XI23.XI51.NET050)    2.7500 (X_U1.XI0.XI23.XI52.NET017)    2.7500     
+
+(X_U1.XI0.XI23.XI52.NET019)    0.0000 (X_U1.XI0.XI23.XI52.NET021)    2.7500     
+
+(X_U1.XI0.XI23.XI52.NET025)    2.7500 (X_U1.XI0.XI23.XI52.NET029)    2.7500     
+
+(X_U1.XI0.XI23.XI52.NET033)    2.7500 (X_U1.XI0.XI23.XI52.NET037)    2.7500     
+
+(X_U1.XI0.XI23.XI52.NET041)    2.7500 (X_U1.XI0.XI23.XI52.NET045)    2.7500     
+
+(X_U1.XI0.XI23.XI52.NET049)    2.7500 (X_U1.XI0.XI23.XI52.NET050)    2.7500     
+
+(X_U1.XI0.XI23.XI53.NET017)    2.7500 (X_U1.XI0.XI23.XI53.NET019)    0.0000     
+
+(X_U1.XI0.XI23.XI53.NET021)    2.7500 (X_U1.XI0.XI23.XI53.NET025)    2.7500     
+
+(X_U1.XI0.XI23.XI53.NET029)    2.7500 (X_U1.XI0.XI23.XI53.NET033)    2.7500     
+
+(X_U1.XI0.XI23.XI53.NET037)    2.7500 (X_U1.XI0.XI23.XI53.NET041)    2.7500     
+
+(X_U1.XI0.XI23.XI53.NET045)    2.7500 (X_U1.XI0.XI23.XI53.NET049)    2.7500     
+
+(X_U1.XI0.XI23.XI53.NET050)    2.7500 (X_U1.XI0.XI23.XI54.NET017)    2.7500     
+
+(X_U1.XI0.XI23.XI54.NET019)    0.0000 (X_U1.XI0.XI23.XI54.NET021)    2.7500     
+
+(X_U1.XI0.XI23.XI54.NET025)    2.7500 (X_U1.XI0.XI23.XI54.NET029)    2.7500     
+
+(X_U1.XI0.XI23.XI54.NET033)    2.7500 (X_U1.XI0.XI23.XI54.NET037)    2.7500     
+
+(X_U1.XI0.XI23.XI54.NET041)    2.7500 (X_U1.XI0.XI23.XI54.NET045)    2.7500     
+
+(X_U1.XI0.XI23.XI54.NET049)    2.7500 (X_U1.XI0.XI23.XI54.NET050)    2.7500     
+
+(X_U1.XI0.XI13.XI13.NET0101) 68.02E-06                                          
+
+(X_U1.XI0.XI13.XI13.NET0104)-43.96E-18                                          
+
+(X_U1.XI0.XI13.XI13.NET0110)  -26.8130                                          
+
+(X_U1.XI0.XI13.XI13.NET0120)   28.0740                                          
+
+(X_U1.XI0.XI13.XI13.NET0123)-68.01E-06                                          
+
+(X_U1.XI0.XI13.XI13.NET0126) 55.51E-18                                          
+
+(X_U1.XI0.XI13.XI13.NET0137)    6.8025                                          
+
+(X_U1.XI0.XI13.XI13.NET0159)   -6.8013                                          
+
+(X_U1.XI0.XI13.XI13.NET0163)   26.8180                                          
+
+(X_U1.XI0.XI14.XI13.NET0101) 68.02E-06                                          
+
+(X_U1.XI0.XI14.XI13.NET0104)    0.0000                                          
+
+(X_U1.XI0.XI14.XI13.NET0110)  -26.8130                                          
+
+(X_U1.XI0.XI14.XI13.NET0120)   28.0740                                          
+
+(X_U1.XI0.XI14.XI13.NET0123)-68.01E-06                                          
+
+(X_U1.XI0.XI14.XI13.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI14.XI13.NET0137)    6.8025                                          
+
+(X_U1.XI0.XI14.XI13.NET0159)   -6.8013                                          
+
+(X_U1.XI0.XI14.XI13.NET0163)   26.8180                                          
+
+(X_U1.XI0.XI23.XI45.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI45.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI46.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI47.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI48.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI49.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI50.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI51.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI52.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI53.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0118)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0122)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0126)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0130)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0142)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0146)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0150)    0.0000                                          
+
+(X_U1.XI0.XI23.XI54.NET0154)    0.0000                                          
+
+(X_U1.XI0.XI13.XI13.VINP_INT)   28.0390                                         
+
+(X_U1.XI0.XI14.XI13.VINP_INT)   28.0390                                         
+
+(X_U1.XI0.XI13.XI0.XAHDLI14.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI16.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI19.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI20.3)    0.0000                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI23.4)    0.0000                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI24.4)    0.0000                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI25.4)    0.0000                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI26.4)    1.3750                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI29.3)    0.0000                                        
+
+(X_U1.XI0.XI13.XI0.XAHDLI30.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI14.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI16.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI19.3)    1.3750                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI20.3)    0.0000                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI23.4)    0.0000                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI24.4)    0.0000                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI25.4)    0.0000                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI26.4)    1.3750                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI29.3)    0.0000                                        
+
+(X_U1.XI0.XI13.XI2.XAHDLI30.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI14.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI16.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI19.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI20.3)    0.0000                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI23.4)    0.0000                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI24.4)    0.0000                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI25.4)    0.0000                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI26.4)    1.3750                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI29.3)    0.0000                                        
+
+(X_U1.XI0.XI14.XI0.XAHDLI30.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI14.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI16.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI19.3)    1.3750                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI20.3)    0.0000                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI23.4)    0.0000                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI24.4)    0.0000                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI25.4)    0.0000                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI26.4)    1.3750                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI29.3)    0.0000                                        
+
+(X_U1.XI0.XI14.XI2.XAHDLI30.3)    1.3750                                        
+
+(X_U1.XI0.XI23.XI45.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI45.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI46.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI47.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI48.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI49.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI50.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI51.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI52.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI53.XAHDLI62.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI42.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI46.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI49.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI50.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI52.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI58.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI59.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI60.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI61.3)    0.0000                                       
+
+(X_U1.XI0.XI23.XI54.XAHDLI62.3)    0.0000                
+
+
+  These voltages failed to converge:
+
+    V(N90679)                 =    -27.15V  \    -27.21V
+    V(N87361)                 =   331.65mV  \     9.457V
+    V(N87367)                 =     1.615V  \     41.25V
+    V(N87389)                 =   331.65mV  \     9.457V
+    V(N87427)                 =     1.615V  \     41.25V
+    V(N88862)                 =     27.16V  \     27.21V
+    V(X_U1.XI0.EN_INTINV)     =     2.750V  \     1.375V
+    V(X_U1.XI0.XAHDLI12.3)    =     2.750V  \     1.375V
+    V(X_U1.XI0.XAHDLI5.3)     =     2.750V  \     1.375V
+    V(X_U1.XI0.NET0107)       =     2.750V  \     1.375V
+    V(X_U1.XI0.XAHDLI18.3)    =     2.750V  \     1.375V
+    V(X_U1.XI0.G0_INT)        =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.NET044)   =     27.96V  \     28.04V
+    V(X_U1.XI0.XI14.ENINV)    =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.NET5)     =     1.615V  \     41.25V
+    V(X_U1.XI0.XI14.NET19)    =   331.65mV  \     9.457V
+    V(X_U1.XI0.XI14.NET45)    =    -27.77V  \    -27.85V
+    V(X_U1.XI0.XI14.NET11)    =   161.46MV  \    4.125GV
+    V(X_U1.XI0.XI14.NET23)    =    33.17MV  \   945.65MV
+    V(X_U1.XI0.XI13.NET044)   =     27.96V  \     28.04V
+    V(X_U1.XI0.XI13.ENINV)    =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.NET5)     =     1.615V  \     41.25V
+    V(X_U1.XI0.XI13.NET19)    =   331.65mV  \     9.457V
+    V(X_U1.XI0.XI13.NET45)    =    -27.77V  \    -27.85V
+    V(X_U1.XI0.XI13.NET11)    =   161.46MV  \    4.125GV
+    V(X_U1.XI0.XI13.NET23)    =    33.17MV  \   945.65MV
+    V(X_U1.XI0.XI14.XI13.VA1) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI14.XI13.NET0120) =     28.00V  \     28.07V
+    V(X_U1.XI0.XI14.XI13.NET068) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI14.XI13.VA2) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI14.XI13.VINP_INT) =     27.96V  \     28.04V
+    V(X_U1.XI0.XI14.XI13.NET094) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI14.XI13.NET053) =     27.96V  \     28.04V
+    V(X_U1.XI0.XI14.XI13.VE)  =     27.06V  \     27.11V
+    V(X_U1.XI0.XI14.XI13.NET0159) =    -6.788V  \    -6.801V
+    V(X_U1.XI0.XI14.XI13.NET0137) =     6.790V  \     6.803V
+    V(X_U1.XI0.XI14.XI13.VC)  =    121.57V  \    123.40V
+    V(X_U1.XI0.XI14.XI13.NET63) =    -27.77V  \    -27.85V
+    V(X_U1.XI0.XI14.XI13.VB)  =   -3.688mV  \   -3.696mV
+    V(X_U1.XI0.XI14.XI13.NET062) =    -26.76V  \    -26.81V
+    V(X_U1.XI0.XI14.NET50)    =     28.00V  \     28.07V
+    V(X_U1.XI0.XI14.XI13.NET063) =     26.77V  \     26.82V
+    V(X_U1.XI0.XI14.XI13.NET0163) =     26.77V  \     26.82V
+    V(X_U1.XI0.XI14.XI13.NET0110) =    -26.76V  \    -26.81V
+    V(X_U1.XI0.XI14.XI13.NET110) =     26.55V  \     26.60V
+    V(X_U1.XI0.XI14.XI13.NET67) =    -26.54V  \    -26.60V
+    V(X_U1.XI0.XI14.XI13.NET106) =    -13.89V  \    -13.93V
+    V(X_U1.XI0.XI14.XAHDLI16.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.G1INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.B0INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.B2INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.B3INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.NET112) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI14.XI2.NET122) =   -10.00GV  \   -9.042GV
+    V(X_U1.XI0.XI14.XI2.NET124) =    55.31uV  \    1.066mV
+    V(X_U1.XI0.XI14.XI2.B1)   =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.NET118) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI14.XI2.NET80) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI14.XI2.NET84) =   161.46MV  \    4.125GV
+    V(X_U1.XI0.XI14.XI2.NET88) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI14.XI2.NET92) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI14.XI2.NET116) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI14.XI2.NET126) =    109.51V  \    2.112KV
+    V(X_U1.XI0.XI14.XI2.NET114) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI14.XI2.NET120) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI14.XI0.G1INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.B0INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.B2INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.B3INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.NET112) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI14.XI0.NET122) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI14.XI0.NET124) =    -27.77V  \    -27.85V
+    V(X_U1.XI0.XI14.XI0.B1)   =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.NET118) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI14.XI0.NET80) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI14.XI0.NET84) =    33.17MV  \   945.65MV
+    V(X_U1.XI0.XI14.XI0.NET88) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI14.XI0.NET92) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI14.XI0.NET116) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI14.XI0.NET126) =     44.75V  \    505.68V
+    V(X_U1.XI0.XI14.XI0.NET114) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI14.XI0.NET120) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI13.XI13.VA1) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI13.XI13.NET0120) =     28.00V  \     28.07V
+    V(X_U1.XI0.XI13.XI13.NET068) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI13.XI13.VA2) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI13.XI13.VINP_INT) =     27.96V  \     28.04V
+    V(X_U1.XI0.XI13.XI13.NET094) =     27.10V  \     27.15V
+    V(X_U1.XI0.XI13.XI13.NET053) =     27.96V  \     28.04V
+    V(X_U1.XI0.XI13.XI13.VE)  =     27.06V  \     27.11V
+    V(X_U1.XI0.XI13.XI13.NET0159) =    -6.788V  \    -6.801V
+    V(X_U1.XI0.XI13.XI13.NET0137) =     6.790V  \     6.803V
+    V(X_U1.XI0.XI13.XI13.VC)  =    121.57V  \    123.40V
+    V(X_U1.XI0.XI13.XI13.NET63) =    -27.77V  \    -27.85V
+    V(X_U1.XI0.XI13.XI13.VB)  =   -3.688mV  \   -3.696mV
+    V(X_U1.XI0.XI13.XI13.NET062) =    -26.76V  \    -26.81V
+    V(X_U1.XI0.XI13.NET50)    =     28.00V  \     28.07V
+    V(X_U1.XI0.XI13.XI13.NET063) =     26.77V  \     26.82V
+    V(X_U1.XI0.XI13.XI13.NET0163) =     26.77V  \     26.82V
+    V(X_U1.XI0.XI13.XI13.NET0110) =    -26.76V  \    -26.81V
+    V(X_U1.XI0.XI13.XI13.NET110) =     26.55V  \     26.60V
+    V(X_U1.XI0.XI13.XI13.NET67) =    -26.54V  \    -26.60V
+    V(X_U1.XI0.XI13.XI13.NET106) =    -13.89V  \    -13.93V
+    V(X_U1.XI0.XI13.XAHDLI16.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.G1INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.B0INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.B2INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.B3INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.NET112) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI13.XI2.NET122) =   -10.00GV  \   -9.042GV
+    V(X_U1.XI0.XI13.XI2.NET124) =    55.31uV  \    1.066mV
+    V(X_U1.XI0.XI13.XI2.B1)   =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.NET118) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI13.XI2.NET80) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI13.XI2.NET84) =   161.46MV  \    4.125GV
+    V(X_U1.XI0.XI13.XI2.NET88) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI13.XI2.NET92) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI13.XI2.NET116) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI13.XI2.NET126) =    109.51V  \    2.112KV
+    V(X_U1.XI0.XI13.XI2.NET114) =    53.82MV  \    1.375GV
+    V(X_U1.XI0.XI13.XI2.NET120) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI13.XI0.G1INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.B0INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.B2INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.B3INV) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.NET112) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI13.XI0.NET122) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI13.XI0.NET124) =    -27.77V  \    -27.85V
+    V(X_U1.XI0.XI13.XI0.B1)   =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.NET118) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI13.XI0.NET80) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI13.XI0.NET84) =    33.17MV  \   945.65MV
+    V(X_U1.XI0.XI13.XI0.NET88) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI13.XI0.NET92) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI13.XI0.NET116) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI13.XI0.NET126) =     44.75V  \    505.68V
+    V(X_U1.XI0.XI13.XI0.NET114) =    11.06MV  \   315.22MV
+    V(X_U1.XI0.XI13.XI0.NET120) =   -10.00GV  \   -10.00GV
+    V(X_U1.XI0.XI14.XI2.XAHDLI26.4) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.XAHDLI30.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.XAHDLI19.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.XAHDLI16.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI2.XAHDLI14.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.XAHDLI26.4) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.XAHDLI30.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.XAHDLI19.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.XAHDLI16.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI14.XI0.XAHDLI14.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.XAHDLI26.4) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.XAHDLI30.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.XAHDLI19.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.XAHDLI16.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI2.XAHDLI14.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.XAHDLI26.4) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.XAHDLI30.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.XAHDLI19.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.XAHDLI16.3) =     2.750V  \     1.375V
+    V(X_U1.XI0.XI13.XI0.XAHDLI14.3) =     2.750V  \     1.375V
+
+  These supply currents failed to converge:
+
+    I(X_U1.XI0.E0)            =    -26.70A  \    -26.76A
+    I(X_U1.XI0.XAHDLI12.E1)   =   -5.501pA  \   -2.750pA
+    I(X_U1.XI0.XI14.XI13.E3)  =    6.788nA  \    6.801nA
+    I(X_U1.XI0.XI14.XI13.E1)  =   -6.790nA  \   -6.803nA
+    I(X_U1.XI0.XI14.XI13.ERCGC) =   129.05mA  \    24.85uA
+    I(X_U1.XI0.XI14.XAHDLI16.E1) =   -8.251pA  \   -4.125pA
+    I(X_U1.XI0.XI13.XI13.E3)  =    6.788nA  \    6.801nA
+    I(X_U1.XI0.XI13.XI13.E1)  =   -6.790nA  \   -6.803nA
+    I(X_U1.XI0.XI13.XI13.ERCGC) =   129.05mA  \    24.85uA
+    I(X_U1.XI0.XI13.XAHDLI16.E1) =   -8.251pA  \   -4.125pA
+    I(X_U1.XI0.XI14.XI2.XAHDLI26.E1) =   -8.251pA  \   -4.125pA
+    I(X_U1.XI0.XI14.XI0.XAHDLI26.E1) =   -8.251pA  \   -4.125pA
+    I(X_U1.XI0.XI13.XI2.XAHDLI26.E1) =   -8.251pA  \   -4.125pA
+    I(X_U1.XI0.XI13.XI0.XAHDLI26.E1) =   -8.251pA  \   -4.125pA
+    I(V_V12)                  =  -529.27nA  \  -393.07nA
+    I(X_U1.XI0.V3)            =     26.26A  \     26.31A
+    I(X_U1.XI0.XI14.XI13.VE2) =    29.86nA  \  -418.67nA
+    I(X_U1.XI0.XI14.XI13.VOFFSET_ADJUST) =   -836.73A  \   -23.79KA
+    I(X_U1.XI0.XI14.XI13.VD1) =   -836.73A  \   -23.79KA
+    I(X_U1.XI0.XI14.XI13.VD2) =   -5.351KA  \  -132.25KA
+    I(X_U1.XI0.XI14.XI13.VRO1) =     11.95A  \     12.10A
+    I(X_U1.XI0.XI14.XI13.VE)  =   -824.78A  \   -23.77KA
+    I(X_U1.XI0.XI13.XI13.VOFFSET_ADJUST) =   -836.73A  \   -23.79KA
+    I(X_U1.XI0.XI13.XI13.VD1) =   -836.73A  \   -23.79KA
+    I(X_U1.XI0.XI13.XI13.VD2) =   -5.351KA  \  -132.25KA
+    I(X_U1.XI0.XI13.XI13.VRO1) =     11.95A  \     12.10A
+    I(X_U1.XI0.XI13.XI13.VE)  =   -824.78A  \   -23.77KA
+
+  These devices failed to converge:
+    X_U1.XI0.XI14.XI13.D0 X_U1.XI0.XI14.XI13.D7 X_U1.XI0.XI14.XI13.DPASSTOP 
+    X_U1.XI0.XI14.XI13.DPASSBOTTOM X_U1.XI0.XI14.XI13.DBLOCKBOTTOM 
+    X_U1.XI0.XI14.XI13.DBLOCKTOP X_U1.XI0.XI14.XI13.D4 X_U1.XI0.XI14.XI13.D1 
+    X_U1.XI0.XI13.XI13.D0 X_U1.XI0.XI13.XI13.D7 X_U1.XI0.XI13.XI13.DPASSTOP 
+    X_U1.XI0.XI13.XI13.DPASSBOTTOM X_U1.XI0.XI13.XI13.DBLOCKBOTTOM 
+    X_U1.XI0.XI13.XI13.DBLOCKTOP X_U1.XI0.XI13.XI13.D4 X_U1.XI0.XI13.XI13.D1 
+    X_U1.XI0.XI23.XI45.M6 X_U1.XI0.XI23.XI45.M9 
+
+**** Interrupt ****

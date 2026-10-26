@@ -1,0 +1,22 @@
+** Profile: "sim_TPA6132A2-tran"  [ C:\ELAB_MODEL_WS\ELAB_MODEL_DS\Part_Numbers\TPA6132A2\Release_TI\PSPICE\TPA6132A2_PSPICE_AIO\tpa6132a2-pspicefiles\sim_tpa6132a2\tran.sim ] 
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tpa6132a2.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.2\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 15m 0 1u 
+.OPTIONS STEPGMIN
+.OPTIONS PREORDER
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\sim_TPA6132A2.net" 
+
+
+.END

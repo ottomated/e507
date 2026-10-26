@@ -1,0 +1,252 @@
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "TEST.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps631000_symbol.lib" 
+.LIB "../../../generic_blocks.lib" 
+.LIB "../../../dig_prim.lib" 
+.LIB "../../../dig_io.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.6m 0 10n SKIPBP 
+.OPTIONS ADVCONV
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.001 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Soft_Start.net" 
+
+
+
+**** INCLUDING Soft_Start.net ****
+* source TPS631000_ENCRYPTED
+R_R1         N61810 VOUT  560k TC=0,0 
+R_R3         0 VOUT  3.3 TC=0,0 
+C_C2         0 VIN  22u  TC=0,0 
+X_C4         VOUT 0 CESR PARAMS: C=3u ESR=1m IC=0 X=1
+V_V14         VIN 0  
++PWL 0 2.8 1u 2.8 0.1m 2.8 0.6m 2.8 
+X_C5         VOUT 0 CESR PARAMS: C=3u ESR=1m IC=0 X=1
+C_C1         0 VIN  150u  TC=0,0 
+X_C6         VOUT 0 CESR PARAMS: C=4u ESR=1m IC=0 X=1
+R_R2         0 N61810  100k TC=0,0 
+V_V11         N61538 0 5Vdc
+C_C3         0 VIN  0.1u  TC=0,0 
+X_L1         N61390 N61396 LDCR PARAMS: L=1u DCR=13.5m
+X_U3         VOUT N61396 N61390 VIN N61538 N61538 0 N61810 TPS631000_STARTUP
++  PARAMS:  SS=0
+.PARAM  ss=0
+
+**** RESUMING TEST.cir ****
+.END
+
+WARNING(ORPSIM-15246): Library index file tps631000_symbol.ind does not have the correct format
+
+INFO(ORPSIM-15422): Making new index file tps631000_symbol.ind for library file tps631000_symbol.lib.
+
+Index has 57 entries from 1 file(s).
+
+
+WARNING(ORPSIM-15246): Library index file generic_blocks.ind does not have the correct format
+
+INFO(ORPSIM-15422): Making new index file generic_blocks.ind for library file generic_blocks.lib.
+
+Index has 77 entries from 1 file(s).
+
+
+WARNING(ORPSIM-15246): Library index file dig_prim.ind does not have the correct format
+
+INFO(ORPSIM-15422): Making new index file dig_prim.ind for library file dig_prim.lib.
+
+Index has 119 entries from 1 file(s).
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+
+
+WARNING(ORPSIM-15246): Library index file dig_io.ind does not have the correct format
+
+INFO(ORPSIM-15422): Making new index file dig_io.ind for library file dig_io.lib.
+
+Index has 277 entries from 1 file(s).
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_D1            
+          IS    1.000000E-15 
+           N     .01         
+          TT   10.000000E-12 
+
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74           
+      S0NAME 0               
+       S0TSW    3.500000E-09 
+       S0RLO    7.13         
+       S0RHI  389            
+      S1NAME 1               
+       S1TSW    5.500000E-09 
+       S1RLO  467            
+       S1RHI  200            
+      S2NAME X               
+       S2TSW    3.500000E-09 
+       S2RLO   42.9          
+       S2RHI  116            
+      S3NAME R               
+       S3TSW    3.500000E-09 
+       S3RLO   42.9          
+       S3RHI  116            
+      S4NAME F               
+       S4TSW    3.500000E-09 
+       S4RLO   42.9          
+       S4RHI  116            
+      S5NAME Z               
+       S5TSW    3.500000E-09 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74            
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI    2            
+       S0VLO     .8          
+      S1NAME 0               
+       S1VHI     .8          
+       S1VLO   -1.5          
+      S2NAME R               
+       S2VHI    1.4          
+       S2VLO     .8          
+      S3NAME R               
+       S3VHI    2            
+       S3VLO    1.3          
+      S4NAME X               
+       S4VHI    2            
+       S4VLO     .8          
+      S5NAME 1               
+       S5VHI    7            
+       S5VLO    2            
+      S6NAME F               
+       S6VHI    2            
+       S6VLO    1.3          
+      S7NAME F               
+       S7VHI    1.4          
+       S7VLO     .8          
+
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_PLD_GATE      
+      TPLHMN    0            
+      TPLHTY    0            
+      TPLHMX    0            
+      TPHLMN    0            
+      TPHLTY    0            
+      TPHLMX    0            
+
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_PLD          IO_DFT          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1                 DtoA_STD        
+       DtoA2                 DtoA_STD        
+       DtoA3                 DtoA_STD        
+       DtoA4                 DtoA_STD        
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+          JOB ABORTED
+
+**** 04/12/22 17:06:05 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =       14.44
+

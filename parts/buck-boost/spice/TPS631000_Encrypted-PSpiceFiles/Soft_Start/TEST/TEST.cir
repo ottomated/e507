@@ -1,0 +1,24 @@
+** Profile: "Soft_Start-TEST"  [ C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_Encrypted\tps631000_encrypted-pspicefiles\soft_start\test.sim ] 
+
+** Creating circuit file "TEST.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../tps631000_symbol.lib" 
+.LIB "../../../generic_blocks.lib" 
+.LIB "../../../dig_prim.lib" 
+.LIB "../../../dig_io.lib" 
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.6m 0 10n SKIPBP 
+.OPTIONS ADVCONV
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.001 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Soft_Start.net" 
+
+
+.END

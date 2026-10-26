@@ -1,0 +1,75 @@
+
+**** 07/16/10 16:44:30 ******* PSpice 16.2.0 (Oct 2008) ******* ID# 0 ********
+
+ ** Profile: "sim_TPA6132A2_HT1-tran"  [ C:\Userdata\Cadence\TPA6132A2_HT1-PSpiceFiles\sim_TPA6132A2_HT1\tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Userdata/tpa6132a2/tpa6132a2.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.2\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 15m 0 
+.OPTIONS STEPGMIN
+.OPTIONS PREORDER
+.AUTOCONVERGE ITL1=1000 ITL2=1000 ITL4=1000 RELTOL=0.05 ABSTOL=1.0E-6 VNTOL=.001 PIVTOL=1.0E-10 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\sim_TPA6132A2_HT1.net" 
+
+
+
+**** INCLUDING sim_TPA6132A2_HT1.net ****
+* source TPA6132A2_HT1
+R_R1         OUTL 0  16 TC=0,0 
+V_V9         0 N87653  
++SIN 1.8 0.5 1k 0 0 0
+V_V13         N91308 0 0
+X_U1         N87891 N88973 N93113 N91437 N91308 N88862 N90679 N87361 N87367
++  N87389 N87427 OUTL OUTR 0 0 N89710 TPA6132A2 
+C_C10         N88973 N87891  1u  TC=0,0 
+V_V10         N87623 0  
++SIN 1.8 0.5 1k 0 0 0
+V_V12         N89710 0 3.6
+R_R2         OUTR 0  16 TC=0,0 
+V_V15         N93113 0  
++PULSE 1.3 1.3 0.5m 1p 1p 10m 20m
+V_V11         0 N87629  
++SIN 1.8 0.5 1k 0 0 0
+C_C12         0 N90679  2.2u  TC=0,0 
+C_C6         N87361 N87617  1u  TC=0,0 
+V_V14         N91437 0 1.3
+C_C7         N87367 N87653  1u  TC=0,0 
+C_C8         N87389 N87623  1u  TC=0,0 
+C_C9         N87427 N87629  1u  TC=0,0 
+C_C11         0 N88862  2.2u  TC=0,0 
+V_V8         N87617 0  
++SIN 1.8 0.5 1k 0 0 0
+
+**** RESUMING tran.cir ****
+.END
+
+WARNING -- Library file C:\Userdata\tpa6132a2\tpa6132a2.lib has changed since index file tpa6132a2.ind was created.
+WARNING -- The timestamp changed from Fri Jul 16 16:41:12 2010 to Fri Jul 16 16:44:18 2010.
+Making new index file tpa6132a2.ind for library file tpa6132a2.lib
+Index has 20 entries from 1 file(s).
+
+ERROR -- Node X_U1.XI0.XI14.XI13.NET050 is floating
+ERROR -- Node X_U1.XI0.XI14.XI13.NET0104 is floating
+ERROR -- Node X_U1.XI0.XI14.XI13.NET0101 is floating
+ERROR -- Node X_U1.XI0.XI13.XI13.NET050 is floating
+ERROR -- Node X_U1.XI0.XI13.XI13.NET0104 is floating
+ERROR -- Node X_U1.XI0.XI13.XI13.NET0101 is floating

@@ -2914,7 +2914,7 @@
 	)
 	(symbol
 		(lib_id "TPA6132A2RTER:TPA6132A2RTER")
-		(at 87.63 151.13 0)
+		(at 87.63 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2925,7 +2925,7 @@
 		(fields_autoplaced yes)
 		(uuid "27b9dddb-fcce-441e-b047-1814b5686df5")
 		(property "Reference" "U7"
-			(at 87.63 120.65 0)
+			(at 87.63 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2935,7 +2935,7 @@
 			)
 		)
 		(property "Value" "TPA6132A2RTER"
-			(at 87.63 123.19 0)
+			(at 87.63 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2945,7 +2945,7 @@
 			)
 		)
 		(property "Footprint" "amp:QFN50P300X300X80-16N"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2957,7 +2957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2968,7 +2968,7 @@
 			)
 		)
 		(property "Description" "25-mW, stereo, analog input headphone amplifier in WQFN"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,7 +2980,7 @@
 			)
 		)
 		(property "MF" "Texas Instruments"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2992,7 +2992,7 @@
 			)
 		)
 		(property "PACKAGE" "QFN-16"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3004,7 +3004,7 @@
 			)
 		)
 		(property "MPN" "TPA6132A2RTER"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3016,7 +3016,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3028,7 +3028,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3040,7 +3040,7 @@
 			)
 		)
 		(property "OC_FARNELL" "-"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3052,7 +3052,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPA6132A2RTER/Texas+Instruments/view-part/?ref=snap"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3064,7 +3064,7 @@
 			)
 		)
 		(property "MP" "TPA6132A2RTER"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3076,7 +3076,7 @@
 			)
 		)
 		(property "SUPPLIER" "Texas Instruments"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3088,7 +3088,7 @@
 			)
 		)
 		(property "OC_NEWARK" "45P8247"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3100,7 +3100,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3112,7 +3112,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/TPA6132A2RTER/Texas+Instruments/view-part/?ref=eda"
-			(at 87.63 151.13 0)
+			(at 87.63 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

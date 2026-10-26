@@ -1,0 +1,89 @@
+(ExpressProject "TPS631000_Encrypted"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[04/12/22]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\generic_blocks.olb"
+        (Type "Schematic Library")))
+    (Allegro Netlist Directory "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\tps631000_encrypted.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\tps631000_encrypted-pspicefiles\soft_start\soft_start.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\tps631000_encrypted-pspicefiles\soft_start\test.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\tps631000_encrypted-pspicefiles\soft_start\test.sim"
+        (DisplayName "Soft_Start-TEST")
+        (Type "PSpice Profile")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\tps631000_symbol.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\tps631000_symbol.lib"))
+      (File ".\generic_blocks.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\generic_blocks.lib"))
+      (File ".\dig_prim.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\dig_prim.lib"))
+      (File ".\dig_io.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\dig_io.lib"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (Folder "Logs")
+  (PartMRUSelector
+    (TPS631000_STARTUP
+      (FullPartName "TPS631000_STARTUP.Normal")
+      (LibraryName
+         "C:\USERS\A0489204\DESKTOP\HANDOVER\YICHEN_HANDOVER_SIM2\YICHEN_HANDOVER\TPS631000_PSPICE\TPS631000_ENCRYPTED\TPS631000_SYMBOL.OLB")
+      (DeviceIndex "0"))
+    (TPS631000_SYMBOL
+      (FullPartName "TPS631000_SYMBOL.Normal")
+      (LibraryName
+         "C:\USERS\A0489204\DESKTOP\TPS631000\12.10PSPICE MODEL\PSPICE MODEL\TPS631000-PSPICEFILES\TPS631000_SYMBOL\TPS631000_STARTUP.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_Encrypted\tps631000_encrypted.dsn")
+      (Path "Design Resources"
+         "C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_Encrypted\tps631000_encrypted.dsn"
+         "Soft_Start")
+      (Path "Design Resources" "Library")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 249 0 469"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 985 24 487")
+        (Scroll "169 90")
+        (Zoom "88")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\A0489204\DESKTOP\HANDOVER\YICHEN_HANDOVER_SIM2\YICHEN_HANDOVER\TPS631000_PSPICE\TPS631000_ENCRYPTED\TPS631000_ENCRYPTED.DSN")
+      (Schematic "Soft_Start")
+      (Page "PAGE1")))
+  (MPSSessionName "a0489204")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\a0489204\Desktop\handover\Yichen_Handover_sim2\Yichen_Handover\tps631000_pspice\TPS631000_Encrypted"))
