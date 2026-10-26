@@ -8,6 +8,12 @@
 		(title "MP3 Player")
 	)
 	(lib_symbols)
+	(junction
+		(at 96.52 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "268fc8f4-20e4-4725-b8b0-f216a1fec1c9")
+	)
 	(wire
 		(pts
 			(xy 82.55 99.06) (xy 100.33 99.06)
@@ -20,13 +26,23 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 90.17) (xy 153.67 90.17)
+			(xy 82.55 96.52) (xy 100.33 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d4f6704-ccc4-41ac-920b-59d32ef4f2eb")
+		(uuid "2735a2e7-8859-44d2-8073-e6bafb6eb3a5")
+	)
+	(wire
+		(pts
+			(xy 146.05 76.2) (xy 146.05 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "457086b5-94a5-45ac-b41d-62fdfe8ce3e9")
 	)
 	(wire
 		(pts
@@ -36,21 +52,31 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5f091b6c-0c59-4858-9cd7-b8c3f9ebd301")
+		(uuid "4851dbf3-9fcd-41db-95fc-af915f7eceb1")
 	)
 	(wire
 		(pts
-			(xy 135.89 95.25) (xy 153.67 95.25)
+			(xy 96.52 76.2) (xy 146.05 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6349ca89-3321-479e-8cb3-f185a68d35de")
+		(uuid "51a6f6b5-6f11-4df5-95a0-fb25697b6a0f")
 	)
 	(wire
 		(pts
-			(xy 82.55 82.55) (xy 100.33 82.55)
+			(xy 96.52 82.55) (xy 96.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5780714b-4c7c-46c3-b68d-710b18ffc6e7")
+	)
+	(wire
+		(pts
+			(xy 82.55 82.55) (xy 96.52 82.55)
 		)
 		(stroke
 			(width 0)
@@ -60,23 +86,23 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 100.33 96.52)
+			(xy 96.52 82.55) (xy 100.33 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "772f97f6-474b-4336-958b-065ff9dbd3a2")
+		(uuid "a26ceb10-1156-4732-a464-2874f2d8668e")
 	)
 	(wire
 		(pts
-			(xy 135.89 92.71) (xy 153.67 92.71)
+			(xy 135.89 99.06) (xy 153.67 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b50a1790-a7bb-4a02-9f17-69c3fffed1ca")
+		(uuid "c533279d-f155-4dc4-b052-d9a689b7aaae")
 	)
 	(wire
 		(pts
@@ -97,6 +123,46 @@
 			(type default)
 		)
 		(uuid "d738ba8a-ff0e-40a9-8b53-35249f39d1bb")
+	)
+	(wire
+		(pts
+			(xy 135.89 101.6) (xy 153.67 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7fe5bf4-fd1b-4128-b3cf-0248de34de9b")
+	)
+	(wire
+		(pts
+			(xy 135.89 106.68) (xy 153.67 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0cb1d99-2276-43aa-83a4-ce4b11a350d6")
+	)
+	(wire
+		(pts
+			(xy 146.05 82.55) (xy 153.67 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecc469c2-35e3-44ce-9597-baef46441255")
+	)
+	(wire
+		(pts
+			(xy 135.89 104.14) (xy 153.67 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f44c016e-8c3f-44fc-8e7f-e4671aa170a9")
 	)
 	(sheet
 		(at 100.33 80.01)
@@ -197,8 +263,8 @@
 			)
 		)
 		(pin "IO_DAC_BCK" input
-			(at 135.89 92.71 0)
-			(uuid "3eb73c99-8a73-4f2c-8fc9-d73f244b2b2e")
+			(at 135.89 104.14 0)
+			(uuid "44277b54-29f8-4cba-8ba0-8e76f4c4d122")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -207,8 +273,8 @@
 			)
 		)
 		(pin "IO_DAC_DIN" input
-			(at 135.89 90.17 0)
-			(uuid "0a6c6de4-0d29-4a6f-b60f-94c14e552848")
+			(at 135.89 101.6 0)
+			(uuid "7947efda-96e7-433f-8443-2637a88b7bf7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -217,8 +283,18 @@
 			)
 		)
 		(pin "IO_DAC_LRCK" input
-			(at 135.89 95.25 0)
-			(uuid "b31848cd-e385-42bb-b124-553c4397f7f3")
+			(at 135.89 106.68 0)
+			(uuid "54a56518-c416-47f6-9235-a47ec5a88b4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO_DAC_SCK" input
+			(at 135.89 99.06 0)
+			(uuid "779c00fd-0c07-46d2-ac68-871c78a585e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -293,7 +369,7 @@
 			)
 		)
 		(pin "IO_CHG_STAT1" input
-			(at 82.55 93.98 0)
+			(at 82.55 96.52 0)
 			(uuid "7d7067a4-96e3-4170-9871-4fc9771de795")
 			(effects
 				(font
@@ -303,7 +379,7 @@
 			)
 		)
 		(pin "IO_CHG_STAT2" input
-			(at 82.55 96.52 0)
+			(at 82.55 93.98 0)
 			(uuid "93a062a1-919d-488e-90e7-f56a5b440471")
 			(effects
 				(font
@@ -378,9 +454,19 @@
 				(justify left top)
 			)
 		)
+		(pin "IO_AMP_EN" input
+			(at 153.67 82.55 180)
+			(uuid "c02b00ce-54b1-45cc-aec3-9648eb434ce2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "IO_DAC_BCK" input
-			(at 153.67 92.71 180)
-			(uuid "c373362d-09e2-4a29-be4b-78a6ca6c4fb5")
+			(at 153.67 104.14 180)
+			(uuid "6f89a23f-ba39-43ae-a995-48a1597fa494")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -389,8 +475,8 @@
 			)
 		)
 		(pin "IO_DAC_DIN" input
-			(at 153.67 90.17 180)
-			(uuid "856dd11e-cdcd-40f6-b8a4-b5c3839f0cef")
+			(at 153.67 101.6 180)
+			(uuid "996da183-3e3a-4280-92c8-0889e90f4163")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -399,8 +485,18 @@
 			)
 		)
 		(pin "IO_DAC_LRCK" input
-			(at 153.67 95.25 180)
-			(uuid "66ff28b5-7f21-492d-8ecf-fa3af9caedeb")
+			(at 153.67 106.68 180)
+			(uuid "89e3c00b-de2f-489c-a09f-f0e85c2590e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IO_DAC_SCK" input
+			(at 153.67 99.06 180)
+			(uuid "fd78c444-e90a-4112-ae2f-09d7b3aed440")
 			(effects
 				(font
 					(size 1.27 1.27)

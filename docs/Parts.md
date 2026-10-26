@@ -44,6 +44,15 @@ VSYS -> AMP
 - amp 2.3-5v (can use 3.3) — 2.1mA idle + music
 - Total playing ≈ 100–180mA @3.3V → 1000–1500mAh cell ≈ 6–15h
 
+## Pending questions
+- Does the whole power path make sense? Should I just put everything on the buck boost and have some noise reduction for the DAC? and then a load switch for the sd card?
+- AMP SGND -> headphone jack sleeve - do we also connect to ground? how does this work?
+	- also AGND
+- DAC AGND - what does this mean? a different, separate ground plane?
+	- no, it's just connected to GND at a single point to reduce noise coming through
+- What resistance for pull-down resistors? 10K or 100K?
+	- 100K is too big
+
 ## MCU
 
 - ESP32-S3-WROOM-1U-N16R8 (C3013946)
