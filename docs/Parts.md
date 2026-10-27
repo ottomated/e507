@@ -46,6 +46,7 @@ VSYS -> AMP
 
 ## Pending questions
 - Does the whole power path make sense? Should I just put everything on the buck boost and have some noise reduction for the DAC? and then a load switch for the sd card?
+	- yes, separate LDO makes sense, maybe even sd card should be separated
 - AMP SGND -> headphone jack sleeve - do we also connect to ground? how does this work?
 	- also AGND
 - DAC AGND - what does this mean? a different, separate ground plane?
@@ -53,6 +54,7 @@ VSYS -> AMP
 - What resistance for pull-down resistors? 10K or 100K?
 	- 100K is too big
 - verify smaj5.0a diode direction
+	- verified, I think, matches an online schematic
 
 ## MCU
 
