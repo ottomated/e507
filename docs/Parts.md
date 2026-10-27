@@ -44,6 +44,14 @@ VSYS -> AMP
 - amp 2.3-5v (can use 3.3) — 2.1mA idle + music
 - Total playing ≈ 100–180mA @3.3V → 1000–1500mAh cell ≈ 6–15h
 
+Sleep mode:
+- esp32 = 18uA
+- buck-boost = 93% efficiency + 8uA
+- charger = 4uA
+- battery voltage monitor leakage ~= 4.6uA
+- Total = 35-40uA
+https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
+
 ## Pending questions
 - Does the whole power path make sense? Should I just put everything on the buck boost and have some noise reduction for the DAC? and then a load switch for the sd card?
 	- yes, separate LDO makes sense, maybe even sd card should be separated
