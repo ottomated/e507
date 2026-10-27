@@ -10,9 +10,40 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Install KiCad
+      - name: Create token
+        id: create_token
+        uses: actions/create-github-app-token@fee1f7d63c2ff003460e3d139729b119787bc349 # v2.2.2
+        with:
+          client-id: ${{ secrets.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          token: ${{ steps.create_token.outputs.token }}
+          persist-credentials: false
+
+      - name: Run KiCad
         uses: actions-for-kicad/kicad-actions@ac5e6d742e3eef663cfc21cac30d37384d71fb7a # v2.7-k10.0.7
         with:
-          schematic_file_name: ./power.kicad_sch
+          schematic_file_name: ./e507.kicad_sch
           schematic_output_svg: true
-          schematic_output_svg_folder_name: schematics
+          schematic_output_svg_folder_name: images
+
+          pcb_file_name: ./e507.kicad_pcb
+          pcb_output_image: true
+          pcb_output_image_file_name: images/pcb.png
+      
+      - name: Push images
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 1
+          fi
+          git add images
+
+          git config --local user.email "ottomated@users.noreply.github.com"
+          git config --local user.name "kicad[bot]"
+          git commit -m "Update images"
+
+          git push origin main
