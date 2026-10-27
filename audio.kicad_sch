@@ -509,7 +509,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PCM5102APWR:SOP65P640X120-20N"
+			(property "Footprint" "dac:SOP65P640X120-20N"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -994,7 +994,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -17.78 -20.32 0)
 					(length 5.08)
 					(name "LDOO"
@@ -1444,7 +1444,7 @@
 					)
 				)
 			)
-			(property "Footprint" "TPA6132A2RTER:QFN50P300X300X80-16N"
+			(property "Footprint" "amp:QFN50P300X300X80-16N"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1761,7 +1761,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -17.78 -17.78 0)
 					(length 5.08)
 					(name "HPVSS"
@@ -1779,7 +1779,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -17.78 15.24 0)
 					(length 5.08)
 					(name "CPN"
@@ -1815,25 +1815,7 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -17.78 12.7 0)
-					(length 5.08)
-					(name "CPP"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
+				(pin passive line
 					(at -17.78 20.32 0)
 					(length 5.08)
 					(name "HPVDD"
@@ -1934,6 +1916,26 @@
 						)
 					)
 					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPA6132A2RTER_1_0"
+				(pin passive line
+					(at -17.78 12.7 0)
+					(length 5.08)
+					(name "CPP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -3295,17 +3297,6 @@
 		)
 		(uuid "4568a942-c68f-452a-9369-de535242bbe9")
 	)
-	(hierarchical_label "IO_DAC_SCK"
-		(shape input)
-		(at 69.85 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7e97a7f5-915b-4dfb-ab15-8bcfe35e079a")
-	)
 	(hierarchical_label "IO_DAC_DIN"
 		(shape input)
 		(at 69.85 59.69 180)
@@ -3560,8 +3551,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 40.64 99.06 0)
-		(mirror x)
+		(at 40.64 99.06 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3570,8 +3560,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0811ea05-942f-47a0-b240-a6013c466224")
-		(property "Reference" "#PWR056"
+		(uuid "0b5d1475-0490-41f5-9b44-bb3e772b5f8c")
+		(property "Reference" "#PWR04"
 			(at 40.64 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -3626,12 +3616,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b2a3a644-2686-445b-a680-bcb53808eb31")
+			(uuid "143a8096-fc9e-4098-95b7-583c1ffd33a7")
 		)
 		(instances
 			(project "e507"
 				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
-					(reference "#PWR056")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3750,7 +3740,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPA6132A2RTER:QFN50P300X300X80-16N"
+		(property "Footprint" "amp:QFN50P300X300X80-16N"
 			(at 87.63 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -4102,7 +4092,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM5102APWR:SOP65P640X120-20N"
+		(property "Footprint" "dac:SOP65P640X120-20N"
 			(at 87.63 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -5694,8 +5684,88 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 69.85 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac0564fe-9a50-4e75-9f66-158cf554de01")
+		(property "Reference" "#PWR075"
+			(at 63.5 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 54.6099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91c20114-ea66-4b28-ba8a-3d28280cec42")
+		)
+		(instances
+			(project "e507"
+				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
-		(at 57.15 166.37 270)
+		(at 57.15 166.37 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5747,7 +5817,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 46.99 166.37 0)
+			(at 67.31 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6250,6 +6320,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 69.85 153.67 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7e62cb1-c870-4a91-8650-596e46742b7f")
+		(property "Reference" "#PWR081"
+			(at 63.5 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VSYS"
+			(at 66.04 153.6699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5a7a539c-bfcd-43be-8a75-68c0f6263c31")
+		)
+		(instances
+			(project "e507"
+				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 111.76 85.09 0)
 		(unit 1)
@@ -6363,7 +6512,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SJ-3523-SMT-TR:CUI_SJ-3523-SMT-TR"
+		(property "Footprint" "audio-jack:CUI_SJ-3523-SMT-TR"
 			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -7462,6 +7611,85 @@
 			(project "e507"
 				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 156.21 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff999793-72d4-4ba8-8991-161ee1faefa2")
+		(property "Reference" "#PWR080"
+			(at 63.5 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 156.2099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae26a769-ed46-4113-bcc0-33e4542221b7")
+		)
+		(instances
+			(project "e507"
+				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/f3ecc11f-918d-4403-b589-59b01044df1d"
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)

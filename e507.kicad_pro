@@ -458,7 +458,7 @@
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -469,7 +469,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "same_local_global_power": "warning",
@@ -689,14 +689,6 @@
     "meta": {
       "version": 1
     },
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -709,7 +701,7 @@
         "uuid": "acf7fdfc-08c7-4b01-88b5-5cee2f49d989"
       }
     ],
-    "used_designators": "#PWR1-74,C1-29,D1,J1-3,L1,P1,R1-20,S1-4,SW1-2,U1-7",
+    "used_designators": "#PWR1-74,#PWR82-83,C1-29,D1,J1-3,L1,P1,R1-20,S1-4,SW1-2,U1-7",
     "variants": []
   },
   "sheets": [

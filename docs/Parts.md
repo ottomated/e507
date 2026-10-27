@@ -52,6 +52,7 @@ VSYS -> AMP
 	- no, it's just connected to GND at a single point to reduce noise coming through
 - What resistance for pull-down resistors? 10K or 100K?
 	- 100K is too big
+- verify smaj5.0a diode direction
 
 ## MCU
 
@@ -85,6 +86,7 @@ VSYS -> AMP
 	- I2C communication
 	- separate breakout board that needs to be soldered on
 	- might need dip switches because apparently oled boards are unreliable?
+	- pin headers: 254PZ-1x4P-V (C53055674)
 - Volume up / down: TL3340AF160QG (C2886925)
 	- right-angle
 - Play button & back button: TS-1088-AR02016 (C720477)

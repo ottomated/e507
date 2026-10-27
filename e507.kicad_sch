@@ -96,16 +96,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 99.06) (xy 153.67 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c533279d-f155-4dc4-b052-d9a689b7aaae")
-	)
-	(wire
-		(pts
 			(xy 82.55 106.68) (xy 100.33 106.68)
 		)
 		(stroke
@@ -285,16 +275,6 @@
 		(pin "IO_DAC_LRCK" input
 			(at 135.89 106.68 0)
 			(uuid "54a56518-c416-47f6-9235-a47ec5a88b4e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "IO_DAC_SCK" input
-			(at 135.89 99.06 0)
-			(uuid "779c00fd-0c07-46d2-ac68-871c78a585e2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -487,16 +467,6 @@
 		(pin "IO_DAC_LRCK" input
 			(at 153.67 106.68 180)
 			(uuid "89e3c00b-de2f-489c-a09f-f0e85c2590e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "IO_DAC_SCK" input
-			(at 153.67 99.06 180)
-			(uuid "fd78c444-e90a-4112-ae2f-09d7b3aed440")
 			(effects
 				(font
 					(size 1.27 1.27)
