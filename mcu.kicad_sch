@@ -3814,6 +3814,16 @@
 		)
 		(uuid "0d1caf05-e214-4179-a1a2-5fad2619139f")
 	)
+	(label "IO_VOLUME_DOWN"
+		(at 72.39 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "174c2e0b-4f93-4941-b1b6-9ae82f6e899a")
+	)
 	(label "IO_I2C_SDA"
 		(at 165.1 88.9 180)
 		(effects
@@ -3974,16 +3984,6 @@
 		)
 		(uuid "bea807a7-a18f-48ff-8668-5e102dfd1e22")
 	)
-	(label "IO_VOLUME_DOWN"
-		(at 102.87 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bf359d7c-c877-4433-98fa-d9b9322b43fd")
-	)
 	(label "IO_VOLUME_UP"
 		(at 113.03 142.24 0)
 		(effects
@@ -4085,7 +4085,29 @@
 		)
 		(uuid "10114ac5-bdc7-411b-8c0a-75d5a573dd64")
 	)
-	(hierarchical_label "IO_DAC_DIN"
+	(hierarchical_label "IO_DAC_BCK"
+		(shape input)
+		(at 102.87 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2391cffc-73fd-444d-b967-a8fae6acc4a5")
+	)
+	(hierarchical_label "IO_DAC_LRCK"
+		(shape input)
+		(at 102.87 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4cd60a64-4bed-4663-b659-76b258e428f9")
+	)
+	(hierarchical_label "IO_AUDIO_EN"
 		(shape input)
 		(at 72.39 91.44 180)
 		(effects
@@ -4094,29 +4116,7 @@
 			)
 			(justify right)
 		)
-		(uuid "1fe6b34a-8b72-4d16-a26e-677ec34f4eb9")
-	)
-	(hierarchical_label "IO_DAC_BCK"
-		(shape input)
-		(at 72.39 93.98 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "409183ef-edec-4f80-a362-154657215e18")
-	)
-	(hierarchical_label "IO_DAC_LRCK"
-		(shape input)
-		(at 102.87 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4d6fe78c-9b48-45b9-9512-654b0fe3e66a")
+		(uuid "7894b0e9-4553-4551-a358-d640c63e6a1b")
 	)
 	(hierarchical_label "USB_D+"
 		(shape input)
@@ -4151,17 +4151,6 @@
 		)
 		(uuid "deace301-9490-40af-9018-e725cd0f2191")
 	)
-	(hierarchical_label "IO_AUDIO_EN"
-		(shape input)
-		(at 72.39 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e7c07454-002d-4204-a357-33756b4b6cd5")
-	)
 	(hierarchical_label "IO_CHG_STAT1"
 		(shape input)
 		(at 72.39 83.82 180)
@@ -4172,6 +4161,17 @@
 			(justify right)
 		)
 		(uuid "ea4ada96-8819-4b15-aea3-2422a6bfe173")
+	)
+	(hierarchical_label "IO_DAC_DIN"
+		(shape input)
+		(at 102.87 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea85ed1f-0d3c-48e2-a39a-b2a04a52c29c")
 	)
 	(symbol
 		(lib_id "TS-1088-AR02016:TS-1088-AR02016")
