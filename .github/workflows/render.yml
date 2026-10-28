@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           token: ${{ steps.create_token.outputs.token }}
-          persist-credentials: false
+          persist-credentials: true
 
       - name: Run KiCad
         uses: actions-for-kicad/kicad-actions@ac5e6d742e3eef663cfc21cac30d37384d71fb7a # v2.7-k10.0.7
@@ -36,14 +36,16 @@ jobs:
       
       - name: Push images
         run: |
-          if git diff --quiet; then
-            echo "No changes"
-            exit 1
-          fi
-          git add images
-
           git config --local user.email "ottomated@users.noreply.github.com"
           git config --local user.name "kicad[bot]"
-          git commit -m "Update images"
 
+
+          git add images
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update images"
           git push origin main
+
