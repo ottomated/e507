@@ -30,6 +30,9 @@ jobs:
           schematic_output_svg: true
           schematic_output_svg_folder_name: images
 
+          pcb_output_svg: true
+          pcb_output_svg_file_name: images/pcb.svg
+
           pcb_file_name: ./e507.kicad_pcb
           pcb_output_image: true
           pcb_output_image_file_name: images/pcb.png
@@ -46,6 +49,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update images"
+          git commit -m "Update images [skip ci]"
           git push origin main
 
