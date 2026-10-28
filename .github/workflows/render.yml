@@ -32,6 +32,7 @@ jobs:
 
           pcb_output_svg: true
           pcb_output_svg_file_name: images/pcb.svg
+          pcb_output_layers: F.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,Edge.Cuts,F.Courtyard,B.Courtyard,F.Mask,B.Mask
 
           pcb_file_name: ./e507.kicad_pcb
           pcb_output_image: true
