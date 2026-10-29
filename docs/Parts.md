@@ -29,7 +29,7 @@
 	- Config: RILIM/VSET 18kΩ = 4.2V + 500mA input limit; ISET 600Ω = 500mA charge current (rescale to battery C-rate); no NTC → 10kΩ from TS/MR to GND
 	- Can use STAT1 and STAT2 to detect charging status
 
-- Load switch for SD card & audio: AO3401A (C15127)
+- Load switch for SD card: AO3401A (C15127)
 
 USB-C -> TVS diode -> BQ25185 -> VSYS
 
