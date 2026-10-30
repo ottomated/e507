@@ -64,6 +64,15 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 - verify smaj5.0a diode direction
 	- verified, I think, matches an online schematic
 
+## TODO
+- assign all MPNs to components
+- Check datasheets for recommended parts for passives
+- Add knob
+- CAD case
+	- Find screen pins location
+- Add vias to all GND spots
+- Get someone to fully review everything
+
 ## MCU
 
 - STM32F446
