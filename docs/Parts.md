@@ -66,18 +66,24 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 
 ## MCU
 
-- ESP32-S3-WROOM-1U-N16R8 (C3013946)
+- STM32F446
+	- Cortex M4F, 180MHz
+	- 128KB ram, 256-512KB flash
+	- 200uA/MHz
+	- SWAP AUDIO L/R IN SOFTWARE!!!
+<!-- - ESP32-S3-WROOM-1U-N16R8 (C3013946)
 	- If no space, MINI-1U-N4R2
 	- Not STM32 because less examples
 	- Requirements: mp3, flac, wav + drive screen
 	- No wifi or bluetooth needed at all
 	- Needs to get battery charge level
-		- ADC voltage divider from BAT+ (e.g. 2×100k) into GPIO
+		- ADC voltage divider from BAT+ (e.g. 2×100k) into GPIO -->
 - Microsd reader: DM3CS-SF (C393941)
 	- Not accessible without disassembly
 	- No card-detect pin
 	- hinged for stability
 	- load switch to disable in sleep mode?
+	- 1-bit mode because still faster than USB full speed (6MB/s vs 1.2MB/s)
 - Boot / reset buttons: TS-1088-AR02016 (C720477)
 	- Not accessible from outside, used for programming
 

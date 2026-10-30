@@ -8,11 +8,15 @@
 		(title "MP3 Player")
 	)
 	(lib_symbols)
-	(junction
-		(at 96.52 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "268fc8f4-20e4-4725-b8b0-f216a1fec1c9")
+	(wire
+		(pts
+			(xy 135.89 82.55) (xy 153.67 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1610a409-11f7-4dd7-8e5f-1a81c551a74a")
 	)
 	(wire
 		(pts
@@ -26,47 +30,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 76.2) (xy 146.05 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "457086b5-94a5-45ac-b41d-62fdfe8ce3e9")
-	)
-	(wire
-		(pts
-			(xy 96.52 76.2) (xy 146.05 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "51a6f6b5-6f11-4df5-95a0-fb25697b6a0f")
-	)
-	(wire
-		(pts
-			(xy 96.52 82.55) (xy 96.52 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5780714b-4c7c-46c3-b68d-710b18ffc6e7")
-	)
-	(wire
-		(pts
-			(xy 82.55 82.55) (xy 96.52 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f803a0a-fa3a-4692-948f-64d170d80b39")
-	)
-	(wire
-		(pts
-			(xy 96.52 82.55) (xy 100.33 82.55)
+			(xy 82.55 82.55) (xy 100.33 82.55)
 		)
 		(stroke
 			(width 0)
@@ -133,16 +97,6 @@
 			(type default)
 		)
 		(uuid "e0cb1d99-2276-43aa-83a4-ce4b11a350d6")
-	)
-	(wire
-		(pts
-			(xy 146.05 82.55) (xy 153.67 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecc469c2-35e3-44ce-9597-baef46441255")
 	)
 	(wire
 		(pts
@@ -275,6 +229,16 @@
 		(pin "IO_DAC_LRCK" input
 			(at 135.89 106.68 0)
 			(uuid "54a56518-c416-47f6-9235-a47ec5a88b4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IO_AMP_EN" input
+			(at 135.89 82.55 0)
+			(uuid "5b6716ef-5e0a-4a89-9efd-e6e7a19cb411")
 			(effects
 				(font
 					(size 1.27 1.27)
