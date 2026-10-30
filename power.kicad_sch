@@ -4896,6 +4896,16 @@
 		)
 		(uuid "fe883f3d-2641-4566-88e0-a7e158c39790")
 	)
+	(label "USB_DP"
+		(at 39.37 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "21079236-f83e-45ef-9e38-2e010ff98138")
+	)
 	(label "VBAT"
 		(at 227.33 40.64 0)
 		(effects
@@ -4906,7 +4916,7 @@
 		)
 		(uuid "273b9c18-5e9c-49e9-af40-69a711a6b549")
 	)
-	(label "USB_D+"
+	(label "USB_DP"
 		(at 74.93 53.34 0)
 		(effects
 			(font
@@ -4926,7 +4936,7 @@
 		)
 		(uuid "464f378c-5699-4baa-bede-ae63a98710eb")
 	)
-	(label "USB_D-"
+	(label "USB_DN"
 		(at 74.93 55.88 0)
 		(effects
 			(font
@@ -4935,16 +4945,6 @@
 			(justify left bottom)
 		)
 		(uuid "5f16b04c-74f8-4a7c-b36a-81b88d407ffe")
-	)
-	(label "USB_D-"
-		(at 39.37 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7c6f43af-664c-41d8-b909-fc917023c263")
 	)
 	(label "VBAT"
 		(at 247.65 69.85 0)
@@ -4956,15 +4956,15 @@
 		)
 		(uuid "b10614fd-70b7-446a-aa79-66dfb316b31d")
 	)
-	(label "USB_D+"
-		(at 39.37 53.34 180)
+	(label "USB_DN"
+		(at 39.37 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "ebe0c48e-e65b-49c2-99f0-76ea8f6c5f63")
+		(uuid "cedd4e7b-c2ae-4006-b6e5-573df4a8fca1")
 	)
 	(hierarchical_label "IO_BAT_V"
 		(shape input)
