@@ -5751,7 +5751,7 @@
 				)
 			)
 		)
-		(property "Part #" "0402WGF4703TCE"
+		(property "Part #" ""
 			(at 247.65 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6573,7 +6573,7 @@
 				)
 			)
 		)
-		(property "Part #" "0402WGF4703TCE"
+		(property "Part #" "0603WAF4703T5E"
 			(at 247.65 87.63 0)
 			(hide yes)
 			(show_name no)
