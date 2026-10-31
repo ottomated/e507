@@ -63,7 +63,8 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 	- 100K is too big
 - verify smaj5.0a diode direction
 	- verified, I think, matches an online schematic
-
+- okay with just USBLC6?
+	
 ## TODO
 - assign all MPNs to components
 - Check datasheets for recommended parts for passives

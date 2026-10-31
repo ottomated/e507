@@ -4504,8 +4504,24 @@
 		(uuid "f5766397-a331-41df-b926-39d741f14930")
 	)
 	(no_connect
+		(at 101.6 80.01)
+		(uuid "217919d6-d4c6-40ab-b1cc-af0cc7df24bf")
+	)
+	(no_connect
+		(at 101.6 82.55)
+		(uuid "3e842bad-7cbb-487e-8b88-27ad45800a85")
+	)
+	(no_connect
+		(at 101.6 97.79)
+		(uuid "6d8d4215-8a7a-45ce-af11-42865ceb42de")
+	)
+	(no_connect
 		(at 82.55 186.69)
 		(uuid "8956c632-7abf-4d17-b5d8-13b8d240fa62")
+	)
+	(no_connect
+		(at 101.6 77.47)
+		(uuid "c8b3e000-3b48-4736-a747-37c5c5d2853d")
 	)
 	(no_connect
 		(at 200.66 36.83)
@@ -4514,6 +4530,10 @@
 	(no_connect
 		(at 82.55 163.83)
 		(uuid "e364d004-bb88-4157-8ce3-6aa93b615fc0")
+	)
+	(no_connect
+		(at 101.6 95.25)
+		(uuid "fddfa7a2-3e66-4069-8e84-d7c98799dbfa")
 	)
 	(wire
 		(pts
@@ -5265,16 +5285,6 @@
 		)
 		(uuid "4e53a0b5-21e0-4212-b34a-90f72bd8c219")
 	)
-	(label "IO_VOLUME_UP"
-		(at 101.6 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "62e4dce8-cb31-41e1-8ba5-1d95e4d50fad")
-	)
 	(label "IO_SD_DAT0"
 		(at 173.99 39.37 180)
 		(effects
@@ -5295,6 +5305,16 @@
 		)
 		(uuid "8df214ab-c582-46d6-a203-934b8dba7eef")
 	)
+	(label "IO_PLAY_POWER"
+		(at 101.6 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3ee01b2-d2be-4ff7-bd3b-e027e5698df0")
+	)
 	(label "IO_SD_CMD"
 		(at 173.99 31.75 180)
 		(effects
@@ -5304,6 +5324,16 @@
 			(justify right bottom)
 		)
 		(uuid "a522c415-989d-46a7-990a-aacccf2d5d08")
+	)
+	(label "IO_VOLUME_UP"
+		(at 118.11 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be9db528-ec0b-4484-9d28-fdb20d7cc2c6")
 	)
 	(label "IO_VOLUME_UP"
 		(at 110.49 161.29 0)
@@ -5366,17 +5396,6 @@
 		)
 		(uuid "079bef54-b37e-422c-9ecc-cfb71eb021f8")
 	)
-	(hierarchical_label "IO_CHG_STAT1"
-		(shape input)
-		(at 101.6 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0fce3260-aaeb-4ef8-81c0-0a2227e4b190")
-	)
 	(hierarchical_label "IO_DAC_LRCK"
 		(shape input)
 		(at 101.6 110.49 0)
@@ -5388,6 +5407,28 @@
 		)
 		(uuid "2015c8c6-c065-41b5-af1a-6246d012e7dd")
 	)
+	(hierarchical_label "IO_BAT_V"
+		(shape input)
+		(at 101.6 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "284c67de-140a-47ae-999b-d00706e630f9")
+	)
+	(hierarchical_label "IO_CHG_STAT1"
+		(shape input)
+		(at 60.96 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "288e317c-d3eb-4c70-a50c-af821ad5dec1")
+	)
 	(hierarchical_label "USB_D+"
 		(shape input)
 		(at 101.6 74.93 0)
@@ -5398,17 +5439,6 @@
 			(justify left)
 		)
 		(uuid "374b9b00-8278-42ca-9dbb-b2a856ffb551")
-	)
-	(hierarchical_label "IO_BAT_V"
-		(shape input)
-		(at 60.96 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "560f85bf-f41c-4755-a1fc-3fc3b9dd8aa0")
 	)
 	(hierarchical_label "IO_AUDIO_EN"
 		(shape input)
@@ -8403,7 +8433,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C115962"
 			(at 27.94 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8414,7 +8444,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "X50328MSB2GI"
 			(at 27.94 57.15 0)
 			(hide yes)
 			(show_name no)

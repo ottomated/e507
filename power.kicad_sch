@@ -5206,7 +5206,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C7519"
 			(at 102.87 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5217,7 +5217,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "ST USBLC6-2SC6"
 			(at 102.87 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6081,7 +6081,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25905"
 			(at 86.36 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6092,7 +6092,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF5101TCE"
 			(at 86.36 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -8962,7 +8962,7 @@
 				(justify bottom)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C54582899"
 			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8973,7 +8973,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "XY-S2B-PH-SM4-TB"
 			(at 256.54 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -11987,7 +11987,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25905"
 			(at 29.21 50.8 90)
 			(hide yes)
 			(show_name no)
@@ -11998,7 +11998,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF5101TCE"
 			(at 29.21 50.8 90)
 			(hide yes)
 			(show_name no)
