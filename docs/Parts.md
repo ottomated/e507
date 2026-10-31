@@ -72,6 +72,8 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 	- Find screen pins location
 - Add vias to all GND spots
 - Get someone to fully review everything
+- check C4 GRM187R61A226ME15 vs CL10A226MQ8NRNC
+- check C5
 
 ## MCU
 
