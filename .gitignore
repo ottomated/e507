@@ -2,3 +2,5 @@
 docs/.cache
 .DS_Store
 *.bak
+/production
+/fabrication-toolkit-options.json
