@@ -6353,7 +6353,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C1555"
 			(at 21.59 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6364,7 +6364,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402CG220J500NT"
 			(at 21.59 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7076,7 +7076,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C5116483"
 			(at 170.18 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7087,7 +7087,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "2.54-1*4"
 			(at 170.18 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -8705,7 +8705,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "SiP32431DR3"
 			(at 180.34 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -11326,7 +11326,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STM32F446RETx"
+		(property "Value" "STM32F446RET6"
 			(at 85.9633 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11371,7 +11371,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C69336"
 			(at 81.28 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -11382,7 +11382,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "STM32F446RET6"
 			(at 81.28 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -11741,7 +11741,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C1555"
 			(at 34.29 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11752,7 +11752,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402CG220J500NT"
 			(at 34.29 60.96 0)
 			(hide yes)
 			(show_name no)

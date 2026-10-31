@@ -76,6 +76,8 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 - Get someone to fully review everything
 - check C4 GRM187R61A226ME15 vs CL10A226MQ8NRNC
 - check C5
+- check polarized caps on DAC
+- replace sd load switch with mosfet
 
 ## MCU
 
