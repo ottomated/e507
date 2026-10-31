@@ -64,11 +64,12 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 - verify smaj5.0a diode direction
 	- verified, I think, matches an online schematic
 - okay with just USBLC6?
-	
+
 ## TODO
 - assign all MPNs to components
 - Check datasheets for recommended parts for passives
 - Add knob
+- Add play/pause/power button
 - CAD case
 	- Find screen pins location
 - Add vias to all GND spots

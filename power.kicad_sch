@@ -5099,7 +5099,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25744"
 			(at 156.21 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -5110,7 +5110,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF1002TCE"
 			(at 156.21 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -5400,7 +5400,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C52923"
 			(at 96.52 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5411,7 +5411,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL05A105KA5NQNC"
 			(at 96.52 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5696,7 +5696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "570K?"
+		(property "Value" "470K"
 			(at 250.19 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5740,7 +5740,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25790"
 			(at 247.65 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5751,7 +5751,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF4703TCE"
 			(at 247.65 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -6431,7 +6431,7 @@
 				(justify bottom)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C19725033"
 			(at 189.23 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6442,7 +6442,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "BQ25185DLHR"
 			(at 189.23 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -6518,7 +6518,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330K?"
+		(property "Value" "470K"
 			(at 250.19 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6562,7 +6562,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25790"
 			(at 247.65 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6573,7 +6573,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF4703TCE"
 			(at 247.65 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -6987,7 +6987,7 @@
 				(justify bottom)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C2864221"
 			(at 62.23 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6998,7 +6998,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "TPS73633DBVT"
 			(at 62.23 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -7100,7 +7100,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C1525"
 			(at 259.08 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7111,7 +7111,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL05B104KO5NNNC"
 			(at 259.08 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -7643,7 +7643,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C15195"
 			(at 41.91 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -7654,7 +7654,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL05B103KB5NNNC"
 			(at 41.91 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -7976,7 +7976,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 167.9448 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -8009,7 +8009,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C15849"
 			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -8020,7 +8020,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL10A105KB8NNNC"
 			(at 168.91 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -8625,7 +8625,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 222.5548 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8658,7 +8658,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C15849"
 			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8669,7 +8669,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL10A105KB8NNNC"
 			(at 223.52 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -9066,7 +9066,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25762"
 			(at 163.83 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9077,7 +9077,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF1802TCE"
 			(at 163.83 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9986,7 +9986,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C11702"
 			(at 167.64 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9997,7 +9997,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF1001TCE"
 			(at 167.64 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -10245,7 +10245,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25744"
 			(at 209.55 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -10256,7 +10256,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF1002TCE"
 			(at 209.55 45.72 90)
 			(hide yes)
 			(show_name no)
@@ -11213,7 +11213,7 @@
 				(justify bottom)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C2988369"
 			(at 57.15 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -11224,7 +11224,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "GT-USB-7010ASV"
 			(at 57.15 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -11365,7 +11365,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C52923"
 			(at 30.48 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -11376,7 +11376,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL05A105KA5NQNC"
 			(at 30.48 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -11547,7 +11547,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25744"
 			(at 156.21 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11558,7 +11558,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF1002TCE"
 			(at 156.21 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11774,7 +11774,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 215.5952 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11807,7 +11807,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C96446"
 			(at 214.63 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -11818,7 +11818,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "CL10A106MA8NRNC"
 			(at 214.63 31.75 0)
 			(hide yes)
 			(show_name no)
