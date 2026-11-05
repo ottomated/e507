@@ -9931,6 +9931,28 @@
 				)
 			)
 		)
+		(property "LCSC Part #" "C15127"
+			(at 175.26 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part #" "AO3401A"
+			(at 175.26 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "e2649a57-8c40-4d8d-8993-436e333be064")
 		)
