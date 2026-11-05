@@ -117,6 +117,9 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 	- separate breakout board that needs to be soldered on
 	- might need dip switches because apparently oled boards are unreliable?
 	- pin headers: 254PZ-1x4P-V (C53055674)
+	- https://www.aliexpress.us/item/3256806202423905.html 128x32 1.71in
+	- https://www.aliexpress.us/item/3256809262345931.html 256x64 2.08in
+	
 - Volume up / down: TL3340AF160QG (C2886925)
 	- right-angle
 - Play button & back button: TS-1088-AR02016 (C720477)

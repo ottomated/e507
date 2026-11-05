@@ -6175,7 +6175,7 @@
 				)
 			)
 		)
-		(property "Value" "SJ-3523-SMT-TR"
+		(property "Value" "PJ-313D-B"
 			(at 140.97 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6185,7 +6185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "audio-jack:CUI_SJ-3523-SMT-TR"
+		(property "Footprint" "audio-jack:PJ-3135-B"
 			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -6316,7 +6316,7 @@
 				(justify bottom)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C319112"
 			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -6327,7 +6327,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "PJ-313D-B"
 			(at 137.16 130.81 0)
 			(hide yes)
 			(show_name no)
