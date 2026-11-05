@@ -2106,160 +2106,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:SMAJ5.0A"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SMAJ5.0A"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMA"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-				(at -1.27 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "400W unidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "unidirectional diode TVS voltage suppressor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "D*SMA*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SMAJ5.0A_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMAJ5.0A_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "GND_1"
 			(power global)
 			(pin_numbers
@@ -4309,12 +4155,6 @@
 		(uuid "62e90812-7cfa-4078-9f70-bd18e147aed4")
 	)
 	(junction
-		(at 80.01 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "782e36b0-227a-4a1b-920b-f13c0415f54e")
-	)
-	(junction
 		(at 76.2 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4588,16 +4428,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 45.72) (xy 80.01 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67874094-0ad1-4168-91e3-ef27a366a30f")
-	)
-	(wire
-		(pts
 			(xy 224.79 119.38) (xy 227.33 119.38)
 		)
 		(stroke
@@ -4728,7 +4558,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 45.72) (xy 91.44 45.72)
+			(xy 76.2 45.72) (xy 82.55 45.72)
 		)
 		(stroke
 			(width 0)
@@ -8283,110 +8113,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:SMAJ5.0A")
-		(at 80.01 41.91 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "859ce37f-3760-4881-b041-77cbab622ec3")
-		(property "Reference" "D1"
-			(at 82.55 43.1801 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMAJ5.0A"
-			(at 82.55 40.6401 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMA"
-			(at 74.93 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=75e32973-b177-4ee3-a0ff-cedaf1abdb93&filename=smaj-datasheet"
-			(at 80.01 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "400W unidirectional Transient Voltage Suppressor, 5.0Vr, SMA(DO-214AC)"
-			(at 80.01 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 80.01 41.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part #" ""
-			(at 80.01 41.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "80638105-41d9-4b01-bbb2-86c1a416a767")
-		)
-		(pin "2"
-			(uuid "c8f8772e-3cac-4f02-95da-d17db5ff7315")
-		)
-		(instances
-			(project "e507"
-				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/b552a16b-32bd-43bc-b107-a95a5d6d725a"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 237.49 123.19 180)
 		(unit 1)
@@ -9177,84 +8903,6 @@
 			(project "e507"
 				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/b552a16b-32bd-43bc-b107-a95a5d6d725a"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 80.01 38.1 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aab6dce2-cfb1-4d45-a9d7-2f78c0861d71")
-		(property "Reference" "#PWR079"
-			(at 80.01 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 80.01 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f8140f24-4c1a-486e-bdf0-3dd7c7ea5c3d")
-		)
-		(instances
-			(project "e507"
-				(path "/acf7fdfc-08c7-4b01-88b5-5cee2f49d989/b552a16b-32bd-43bc-b107-a95a5d6d725a"
-					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -11404,7 +11052,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 91.44 45.72 270)
+		(at 82.55 45.72 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11415,7 +11063,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4187957-1be0-4e84-a7a2-43ffad60b8f4")
 		(property "Reference" "#PWR026"
-			(at 87.63 45.72 0)
+			(at 78.74 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11426,7 +11074,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 95.25 45.7199 90)
+			(at 86.36 45.7199 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11437,7 +11085,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 45.72 0)
+			(at 82.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11448,7 +11096,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 45.72 0)
+			(at 82.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11459,7 +11107,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 91.44 45.72 0)
+			(at 82.55 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
