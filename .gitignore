@@ -2,5 +2,6 @@
 docs/.cache
 .DS_Store
 *.bak
+*.FCBak
 /production
 /fabrication-toolkit-options.json
