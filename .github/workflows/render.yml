@@ -27,19 +27,12 @@ jobs:
         run: sudo apt update && sudo apt install -y kicad-packages3d
 
       - name: Run KiCad
-        uses: actions-for-kicad/kicad-actions@ac5e6d742e3eef663cfc21cac30d37384d71fb7a # v2.7-k10.0.7
-        with:
-          schematic_file_name: ./e507.kicad_sch
-          schematic_output_svg: true
-          schematic_output_svg_folder_name: images
+        run: |
+          kicad-cli sch export svg -o images ./e507.kicad_sch
 
-          pcb_output_svg: true
-          pcb_output_svg_file_name: images/pcb.svg
-          pcb_output_layers: F.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,Edge.Cuts,F.Courtyard,B.Courtyard,F.Mask,B.Mask
+          kicad-cli pcb export svg -o images/pcb.svg -l "F.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,Edge.Cuts,F.Courtyard,B.Courtyard,F.Mask,B.Mask" --mode-single ./e507.kicad_pcb
 
-          pcb_file_name: ./e507.kicad_pcb
-          pcb_output_image: true
-          pcb_output_image_file_name: images/pcb.png
+          kicad-cli pcb render -o images/pcb.png --side top --rotate -45,0,45 --width 400 --height 900 ./e507.kicad_pcb
       
       - name: Push images
         run: |
