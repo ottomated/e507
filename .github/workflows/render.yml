@@ -23,16 +23,17 @@ jobs:
           token: ${{ steps.create_token.outputs.token }}
           persist-credentials: true
       
-      - name: Install KiCad 3d models
-        run: sudo apt update && sudo apt install -y kicad-packages3d
-
       - name: Run KiCad
         run: |
-          kicad-cli sch export svg -o images ./e507.kicad_sch
-
-          kicad-cli pcb export svg -o images/pcb.svg -l "F.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,Edge.Cuts,F.Courtyard,B.Courtyard,F.Mask,B.Mask" --mode-single ./e507.kicad_pcb
-
-          kicad-cli pcb render -o images/pcb.png --side top --rotate -45,0,45 --width 400 --height 900 ./e507.kicad_pcb
+          docker run --rm \
+            -v "$PWD:/project" -w /project \
+            --user "$(id -u):$(id -g)" \
+            kicad/kicad:10.0-full \
+            sh -c '
+              kicad-cli sch export svg -o images ./e507.kicad_sch
+              kicad-cli pcb export svg -o images/pcb.svg -l "F.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,Edge.Cuts,F.Courtyard,B.Courtyard,F.Mask,B.Mask" --mode-single ./e507.kicad_pcb
+              kicad-cli pcb render -o images/pcb.png --side top --rotate -45,0,45 --width 800 --height 800 ./e507.kicad_pcb
+            '
       
       - name: Push images
         run: |
