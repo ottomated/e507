@@ -22,6 +22,9 @@ jobs:
         with:
           token: ${{ steps.create_token.outputs.token }}
           persist-credentials: true
+      
+      - name: Install KiCad 3d models
+        run: sudo apt install -y kicad-packages3d
 
       - name: Run KiCad
         uses: actions-for-kicad/kicad-actions@ac5e6d742e3eef663cfc21cac30d37384d71fb7a # v2.7-k10.0.7
