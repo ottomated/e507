@@ -6634,7 +6634,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "33pF"
 			(at 22.86 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6678,7 +6678,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C1555"
+		(property "LCSC Part #" "C1562"
 			(at 25.4 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6689,7 +6689,7 @@
 				)
 			)
 		)
-		(property "Part #" "0402CG220J500NT"
+		(property "Part #" "0402CG330J500NT"
 			(at 25.4 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -9931,7 +9931,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1µF"
+		(property "Value" "100nF"
 			(at 170.18 105.4099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9975,7 +9975,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C52923"
+		(property "LCSC Part #" "C1525"
 			(at 173.99 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -9986,7 +9986,7 @@
 				)
 			)
 		)
-		(property "Part #" "CL05A105KA5NQNC"
+		(property "Part #" "CL05B104KO5NNNC"
 			(at 173.99 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -11859,7 +11859,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22pF"
+		(property "Value" "33pF"
 			(at 40.64 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11903,7 +11903,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C1555"
+		(property "LCSC Part #" "C1562"
 			(at 38.1 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -11914,7 +11914,7 @@
 				)
 			)
 		)
-		(property "Part #" "0402CG220J500NT"
+		(property "Part #" "0402CG330J500NT"
 			(at 38.1 60.96 0)
 			(hide yes)
 			(show_name no)

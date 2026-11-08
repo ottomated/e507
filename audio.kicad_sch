@@ -2207,6 +2207,16 @@
 		)
 		(uuid "4b9c31f8-7b7f-4f34-b954-02b2efa9cbc9")
 	)
+	(text "L/R channels are swapped in firmware"
+		(exclude_from_sim no)
+		(at 30.226 133.858 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "5d6e2876-c158-4081-a851-1fc9d165e65e")
+	)
 	(text "AMP"
 		(exclude_from_sim no)
 		(at 18.542 97.282 0)

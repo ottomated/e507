@@ -4358,6 +4358,16 @@
 		)
 		(uuid "37d5446b-5610-4035-ac47-7d0339469a40")
 	)
+	(text "Todo - verify battery polarity\n"
+		(exclude_from_sim no)
+		(at 268.224 36.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3e73e3b8-627f-4b29-abe7-1b00c72b04f8")
+	)
 	(text "(voltage regulator for audio section)"
 		(exclude_from_sim no)
 		(at 40.64 92.71 0)
@@ -4694,6 +4704,16 @@
 			(type default)
 		)
 		(uuid "2c108b17-73e9-4e6e-a9cf-90727e224b28")
+	)
+	(wire
+		(pts
+			(xy 251.46 34.29) (xy 251.46 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33cfdc14-107f-4ef3-96ac-b73715d1ed25")
 	)
 	(wire
 		(pts
@@ -11236,7 +11256,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 251.46 31.75 270)
+		(at 251.46 34.29 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11244,10 +11265,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e06722f8-b563-4f04-94b4-00b5104d135b")
 		(property "Reference" "#PWR012"
-			(at 245.11 31.75 0)
+			(at 251.46 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11258,18 +11278,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 247.65 31.7499 90)
+			(at 248.92 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 31.75 0)
+			(at 251.46 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11280,7 +11300,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 31.75 0)
+			(at 251.46 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11291,7 +11311,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 251.46 31.75 0)
+			(at 251.46 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
