@@ -28,7 +28,7 @@ jobs:
           docker run --rm \
             -v "$PWD:/project" -w /project \
             --user "$(id -u):$(id -g)" \
-            -e HOME=/tmp
+            -e HOME=/tmp \
             kicad/kicad:10.0-full \
             sh -c '
               kicad-cli sch export svg -o images ./e507.kicad_sch
