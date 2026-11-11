@@ -8,10 +8,10 @@
 ![Power](images/e507-Power.svg)
 
 ### MCU
-![Power](images/e507-MCU.svg)
+![MCU](images/e507-MCU.svg)
 
 ### Audio
-![Power](images/e507-MCU.svg)
+![Audio](images/e507-Audio.svg)
 
 ### Root
 ![Power](images/e507.svg)
