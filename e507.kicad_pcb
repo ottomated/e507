@@ -8867,6 +8867,17 @@
 			(uuid "e0225334-ec17-47a9-b70e-dc853176676b")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/parts/flat-button/TS-1088-AR02016.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
