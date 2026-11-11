@@ -7387,7 +7387,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C25744"
 			(at 36.83 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7398,7 +7398,7 @@
 				)
 			)
 		)
-		(property "Part #" ""
+		(property "Part #" "0402WGF1002TCE"
 			(at 36.83 151.13 0)
 			(hide yes)
 			(show_name no)
