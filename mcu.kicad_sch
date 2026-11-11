@@ -5876,6 +5876,16 @@
 		)
 		(uuid "4e53a0b5-21e0-4212-b34a-90f72bd8c219")
 	)
+	(label "IO_PLAY_POWER"
+		(at 101.6 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4e6c2753-364e-48dd-9774-a31e0b546f68")
+	)
 	(label "IO_SD_DAT0"
 		(at 222.25 43.18 180)
 		(effects
@@ -5895,16 +5905,6 @@
 			(justify right bottom)
 		)
 		(uuid "8df214ab-c582-46d6-a203-934b8dba7eef")
-	)
-	(label "IO_PLAY_POWER"
-		(at 101.6 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8eaf2fd6-2e00-4011-a983-e5c988007848")
 	)
 	(label "IO_SD_CMD"
 		(at 222.25 35.56 180)
