@@ -4618,7 +4618,7 @@
 	)
 	(text "Screen breakout board contains I2C pullups\n"
 		(exclude_from_sim no)
-		(at 37.084 171.45 0)
+		(at 36.322 173.736 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4965,6 +4965,16 @@
 			(type default)
 		)
 		(uuid "1e840670-32c3-4e91-91d4-8a8d098194c2")
+	)
+	(wire
+		(pts
+			(xy 41.91 168.91) (xy 31.75 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ff971f9-177d-40fd-b4b9-317fe7ff126e")
 	)
 	(wire
 		(pts
@@ -5348,6 +5358,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 161.29) (xy 46.99 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c7f7b3-d00d-4a7d-905e-158001b58414")
+	)
+	(wire
+		(pts
 			(xy 182.88 111.76) (xy 179.07 111.76)
 		)
 		(stroke
@@ -5378,6 +5398,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 168.91) (xy 31.75 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a364ea57-c551-47bf-a31d-8a410d41566f")
+	)
+	(wire
+		(pts
 			(xy 81.28 130.81) (xy 83.82 130.81)
 		)
 		(stroke
@@ -5395,16 +5425,6 @@
 			(type default)
 		)
 		(uuid "a7645746-8e26-4758-972d-c180572eff09")
-	)
-	(wire
-		(pts
-			(xy 38.1 154.94) (xy 44.45 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8f3f50f-c11d-4a9c-ad52-31fd2bde79d5")
 	)
 	(wire
 		(pts
@@ -5538,6 +5558,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 161.29) (xy 41.91 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4cab8a6-f4d5-4c72-b592-18a3a952361a")
+	)
+	(wire
+		(pts
 			(xy 172.72 135.89) (xy 173.99 135.89)
 		)
 		(stroke
@@ -5595,16 +5625,6 @@
 			(type default)
 		)
 		(uuid "cc1bdeb9-5909-4040-8779-803c0f9d1a24")
-	)
-	(wire
-		(pts
-			(xy 33.02 157.48) (xy 44.45 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce774f3e-64f6-4298-b1bd-e572d148529c")
 	)
 	(wire
 		(pts
@@ -5718,6 +5738,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 161.29) (xy 44.45 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef8d12a9-59df-45a9-99a6-a49549c14134")
+	)
+	(wire
+		(pts
 			(xy 237.49 58.42) (xy 240.03 58.42)
 		)
 		(stroke
@@ -5807,12 +5837,12 @@
 		(uuid "1c2de3f7-647c-4a3b-99e6-acac8763f60e")
 	)
 	(label "IO_I2C_SDA"
-		(at 44.45 162.56 180)
+		(at 46.99 165.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "1ea58984-a3c6-4042-845c-86cb036a4323")
 	)
@@ -5827,12 +5857,12 @@
 		(uuid "1f68b62c-0531-4df6-993d-1bc68d21a1a6")
 	)
 	(label "IO_I2C_SCL"
-		(at 44.45 160.02 180)
+		(at 44.45 167.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2534c027-982c-4684-9588-59913524e742")
 	)
@@ -7476,7 +7506,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 49.53 157.48 0)
+		(at 41.91 156.21 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7487,29 +7517,27 @@
 		(fields_autoplaced yes)
 		(uuid "3a9270d6-97c5-45a0-b744-dd08b50145c0")
 		(property "Reference" "J4"
-			(at 52.07 157.4799 0)
+			(at 43.18 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "SCREEN"
-			(at 52.07 160.0199 0)
+			(at 43.18 152.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 49.53 157.48 0)
+			(at 41.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7520,7 +7548,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 157.48 0)
+			(at 41.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7531,7 +7559,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 49.53 157.48 0)
+			(at 41.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7542,7 +7570,7 @@
 			)
 		)
 		(property "LCSC Part #" "C5116483"
-			(at 49.53 157.48 0)
+			(at 41.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7553,7 +7581,7 @@
 			)
 		)
 		(property "Part #" "2.54-1*4"
-			(at 49.53 157.48 0)
+			(at 41.91 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7922,7 +7950,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 33.02 157.48 90)
+		(at 31.75 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7930,10 +7958,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "44d03b98-91f8-42af-9a77-458b7fe7cc96")
 		(property "Reference" "#PWR039"
-			(at 36.83 157.48 0)
+			(at 31.75 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7944,17 +7971,18 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 31.75 154.94 90)
+			(at 29.21 154.686 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 157.48 0)
+			(at 31.75 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7965,7 +7993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 157.48 0)
+			(at 31.75 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7976,7 +8004,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 33.02 157.48 0)
+			(at 31.75 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9551,7 +9579,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 154.94 270)
+		(at 39.37 161.29 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9559,10 +9588,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8c91db6b-0ec9-46b7-8954-ccbc85089157")
 		(property "Reference" "#PWR038"
-			(at 31.75 154.94 0)
+			(at 39.37 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9573,17 +9601,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 151.13 90)
+			(at 41.148 165.354 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 154.94 0)
+			(at 39.37 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9594,7 +9623,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 154.94 0)
+			(at 39.37 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9605,7 +9634,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 154.94 0)
+			(at 39.37 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
