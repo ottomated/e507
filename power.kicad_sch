@@ -9822,7 +9822,7 @@
 				)
 			)
 		)
-		(property "Footprint" "buck-boost:SOT50P160X60-8N"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-583-8"
 			(at 176.53 129.54 0)
 			(hide yes)
 			(show_name no)
