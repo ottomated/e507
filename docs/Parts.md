@@ -82,7 +82,6 @@ https://electronics-calc.com/battery-life-calculator.html ~= 2.5 years idle
 	- Cortex M4F, 180MHz
 	- 128KB ram, 256-512KB flash
 	- 200uA/MHz
-	- SWAP AUDIO L/R IN SOFTWARE!!!
 	- Clock: X50328MSB2GI (C115962)
 		- capacitors: 22pF C106203
 <!-- - ESP32-S3-WROOM-1U-N16R8 (C3013946)

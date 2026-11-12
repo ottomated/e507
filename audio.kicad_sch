@@ -2207,13 +2207,14 @@
 		)
 		(uuid "4b9c31f8-7b7f-4f34-b954-02b2efa9cbc9")
 	)
-	(text "L/R channels are swapped in firmware"
+	(text "For ease of routing, L/R are swapped going into the AMP,\nand swapped again going to the headphone jack\n"
 		(exclude_from_sim no)
-		(at 30.226 133.858 0)
+		(at 14.478 171.958 0)
 		(effects
 			(font
 				(size 1.016 1.016)
 			)
+			(justify left)
 		)
 		(uuid "5d6e2876-c158-4081-a851-1fc9d165e65e")
 	)
@@ -3087,6 +3088,16 @@
 		)
 		(uuid "fe079f2d-2aed-4bb1-aba5-99298c80859e")
 	)
+	(label "JACK_L"
+		(at 119.38 115.57 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0e072a84-8732-42a0-88a4-902ac3e00c53")
+	)
 	(label "DAC_L"
 		(at 143.51 46.99 0)
 		(effects
@@ -3126,6 +3137,16 @@
 			(justify left bottom)
 		)
 		(uuid "525a6757-80ac-42a0-9d24-fe6e100a2d72")
+	)
+	(label "JACK_R"
+		(at 119.38 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ae09ea5b-5219-426e-a21e-250996992ad1")
 	)
 	(hierarchical_label "IO_DAC_BCK"
 		(shape input)
